@@ -1,0 +1,38 @@
+.container {
+    position: relative;
+    width: 100%;
+    padding-top: 156px;
+    padding-bottom: 262px;
+    background-color: var(--foreground-light);
+    display: flex;
+    flex-direction: column;
+    row-gap: 225px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: calc(var(--folder-tab-height)*-1);
+    right: 0;
+    width: calc(var(--folder-tab-width) - 351px);
+    height: 100px;
+    background: inherit;
+    clip-path: polygon(var(--folder-tab-cutout-width) 0,100% 0,100% 100%,0 100%);
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description {
+    width: 78%;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.188rem;
+    color: var(--text-midtone);
+    text-align: center;
+    padding-top: 76px;
+}
