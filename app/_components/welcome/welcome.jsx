@@ -1,9 +1,6 @@
 import { QuickLinkCard } from './quickLinkCard'
 import styles from './welcome.module.scss'
-import bg_logo from './bg_logo.svg'
-import github_logo from './github_logo.svg'
-import slack_logo from './slack_logo.svg'
-import pencil_icon from './pencil_icon.svg'
+import Image from 'next/image';
 
 export default function Welcome(){
     return(
@@ -11,18 +8,19 @@ export default function Welcome(){
             <div className={styles.welcome}>
                 <div>
                     <h1>Welcome Tech at <span className={styles.include_purple}>#include</span></h1>
+                    <br/>
                     <p>We&apos;re so happy to have you on the #include team! This website will be used to aid you in your <b><span className={styles.include_purple}>learning experience</span></b>. Please refer here for important information regarding <b><span className={styles.include_purple}>resources</span></b>, <b><span className={styles.include_purple}>workshops</span></b>, <b><span className={styles.include_purple}>personal bios</span></b>, and <b><span className={styles.include_purple}>contact information</span></b>.</p>
                 </div>
                 <div>
-                    <img src={bg_logo} alt="bg_logo"/>
+                    <Image src="/welcome/bg_logo.svg" alt="bg_logo" width={600} height={600}/>
                 </div>
             </div>
             
             
             <div className={styles.card_container}>
-                <QuickLinkCard image={github_logo} title="Access Your Repository"/>
-                <QuickLinkCard image={slack_logo} title="Join Your Slack"/>
-                <QuickLinkCard image={pencil_icon} title="Complete Assignments"/>
+                <QuickLinkCard image="/welcome/github_logo.svg" title="Access Your Repository"/>
+                <QuickLinkCard image="/welcome/slack_logo.svg" title="Join Your Slack"/>
+                <QuickLinkCard image="/welcome/pencil_icon.svg" title="Complete Assignments"/>
             </div>
         </div>
     )

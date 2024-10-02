@@ -2,15 +2,13 @@
 .container {
     padding-left: var(--edge-spacing);
     padding-right: var(--edge-spacing);
-    padding-top: var(--edge-spacing);
-    padding-bottom: var(--edge-spacing);
     background-color: var(--background-light);
     align-items: center;
 }
 .welcome {
     display:flex;
     flex-direction: row;
-    width: 50%;
+    align-items: center;
 }
 .card_container{
     display: flex;
@@ -39,4 +37,5 @@
     margin: 40px;
     background-color: var(--foreground-light);
     text-align: center;
+    width: 25%;
 }
