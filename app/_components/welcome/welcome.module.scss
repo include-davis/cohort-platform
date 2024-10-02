@@ -1,0 +1,42 @@
+//for welcome.jsx
+.container {
+    padding-left: var(--edge-spacing);
+    padding-right: var(--edge-spacing);
+    padding-top: var(--edge-spacing);
+    padding-bottom: var(--edge-spacing);
+    background-color: var(--background-light);
+    align-items: center;
+}
+.welcome {
+    display:flex;
+    flex-direction: row;
+    width: 50%;
+}
+.card_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.include_purple{
+    color: var(--include-purple);
+}
+
+//for quickLinkCard.jsx
+.link_button{
+    background-color: var(--include-purple);
+    color: var(--text-light);
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+}
+.link_card{
+    justify-content: center;//doesnt work??
+    border-width: 1px;
+    border-color: var(--include-purple);
+    border-style:solid;
+    padding: 20px;
+    margin: 40px;
+    background-color: var(--foreground-light);
+    text-align: center;
+}
