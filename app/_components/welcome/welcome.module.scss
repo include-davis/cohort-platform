@@ -4,6 +4,7 @@
     padding-right: var(--edge-spacing);
     background-color: var(--background-light);
     align-items: center;
+    color: var(--text-midtone);
 }
 .welcome {
     display:flex;
@@ -27,6 +28,7 @@
     border-radius: 5px;
     border: none;
     width: 80%;
+    height: 30px;
 }
 .link_card{
     justify-content: center;//doesnt work??
@@ -34,8 +36,10 @@
     border-color: var(--include-purple);
     border-style:solid;
     padding: 20px;
-    margin: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     background-color: var(--foreground-light);
     text-align: center;
     width: 25%;
+    border-radius: 15px;
 }
