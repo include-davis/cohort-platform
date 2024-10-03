@@ -1,0 +1,161 @@
+$card-height: auto;
+$line-height-open: $card-height - calc(8px * 15);
+
+$card-height-closed: calc(8px * 20);
+$line-height-closed: $card-height-closed - calc(8px * 15);
+
+.card {
+    color: var(--text-midtone);
+
+    position: relative;
+    border-radius: 20px;
+    height: $card-height;
+}
+
+.card_front {
+    background-color: var(--foreground-light);
+    height: 100%;
+    width: 90%;
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%); // Translates from top left corner to center
+    z-index: 1;
+
+    background-color: var(--foreground-light);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    border: 1px solid var(--include-purple-light)
+}
+
+.line_none {
+    display: none;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    gap: 32px;
+
+    height: 100%;
+    padding: 24px 0px 24px 24px;
+}
+
+.workshop_description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.agenda {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.agenda_item {
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px 1px #00000026;
+}
+
+.link_div {
+    position: sticky;
+    bottom: 0px;
+    padding: 32px 0px;
+    padding-left: 24px;
+
+    background-color: var(--foreground-light);
+}
+
+
+.link {
+    background-color: var(--include-purple);
+    color: var(--text-light);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    padding: 8px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+// Scroll line styles
+
+.line_open {
+    width: 2px;
+    height: 270px;
+    background-color: var(--foreground-light);
+}
+
+.line_closed {
+    width: 2px;
+    height: 160px;
+    background-color: var(--foreground-light);
+    transition: height 0.5s ease
+}
+
+.line_top {
+    position: absolute;
+    top: 0;
+    right: -47px;
+    transform: translate(-50%, -50%);
+    transition: height 0.5s ease
+}
+
+.line_bottom {
+    position: absolute;
+    bottom: 0;
+    right: -47px;
+    transform: translate(-50%, 50%);
+}
+
+.bullet {
+    position: absolute;
+    right: -96px;
+    top: 50%;
+    transform: translate(-50%, -50%); // Translates from top left corner to center
+}
+
+
+.innerCircle {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: var(--foreground-light);
+
+}
+
+.outerCircle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--foreground-light);
+    border-radius: 100%;
+    box-shadow: 0px 0px 75px 0px rgba(60, 37, 126, 0.60);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

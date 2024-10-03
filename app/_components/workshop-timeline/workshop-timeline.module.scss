@@ -1,13 +1,27 @@
 // Page styles
 .content {
-    background: var(--include-gradient);
+    display: flex;
+    justify-content: space-between;
 
+    background: var(--include-gradient);
     color: var(--text-light);
-    padding: calc(8px * 16) calc(8px * 12)
+    padding: calc(8px * 16) calc(8px * 12);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    position: sticky;
+    top: calc(8px * 15);
+
+    max-height: calc(8px * 16);
+    max-width: calc(8px * 47);
 }
 
 .header {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 
@@ -16,85 +30,18 @@
     font-weight: 300;
 }
 
-.bold {
-    font-weight: 700;
-}
-
-// Card Styles
-.card {
-    background-color: var(--include-purple-light);
-    color: var(--text-midtone);
-
-    position: relative;
-    border-radius: 20px;
-    max-width: 40%;
-}
-
-// .card_active {
-//     background-color: var(--accent-color);
-// }
-
-.card_front {
-    background-color: var(--foreground-light);
-    width: 90%;
-    
-    border-radius: 20px 0px 0px 20px;
-}
-
-.number {
+.timeline {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    position: absolute;
-    left: 90%;
-    top: 50%;
-    transform: translate(-50%, -50%); // Translates from top left corner to center
+    justify-content: space-between;
+    // gap: 8px;
 
-    background-color: var(--foreground-light);
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-
-    border: 1px solid var(--include-purple-light)
+    max-width: 55%;
 }
 
-.card_content {
+.workshops {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-
-    padding: 32px 24px;
-}
-
-.title {
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.agenda {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-.agenda_item {
-    padding: 8px;
-    border-radius: 50px;
-    box-shadow: 0px 0px 15px 1px #00000026;
-}
-
-.link {
-    background-color: var(--include-purple);
-    color: var(--text-light);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 16px;
 
-    padding: 8px;
-    border-radius: 10px;
-    width: 200px;
+    max-width: 90%;
 }
