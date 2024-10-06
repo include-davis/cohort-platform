@@ -1,0 +1,46 @@
+// Page styles
+.content {
+    display: flex;
+    justify-content: space-between;
+
+    background: var(--include-gradient);
+    color: var(--text-light);
+    padding: calc(8px * 16) calc(8px * 12);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    position: sticky;
+    top: calc(8px * 15);
+
+    max-height: calc(8px * 16);
+    max-width: calc(8px * 47);
+}
+
+.header {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 55%;
+}
+
+.workshops {
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-spacing);
+
+    max-width: 90%;
+}
