@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import styles from './card.module.scss'
+
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from 'framer-motion'
 import { useState } from 'react';
 
-// adapted from sam's code for the scroll line:
+// Bullets and lines are adapted and modified from include 2023 websitecode: 
+// https://github.com/include-davis/website-2023/blob/main/src/pages/services.tsx
 const boxVariant = {
   // used for bullet point transitions
   visible: { opacity: 2, scale: 1, transition: { duration: 0.5 } },
@@ -48,11 +50,12 @@ export default function Card( {title, text, agenda, link, number} ) {
 
       <div className={styles.card_front}>
         <div className={styles.card_content}>
+          {/* This has the title and description together in the same div*/}
           <div className={styles.workshop_description}>
             <p className={styles.title}>{title}</p>
             <p>{text}</p>
           </div>
-          
+
           <ul className={styles.agenda}>
             { agenda.map( (item, idx) => 
               <li className={styles.agenda_item} key={idx}> {item} </li>
@@ -62,14 +65,13 @@ export default function Card( {title, text, agenda, link, number} ) {
         </div>
 
         <div className={styles.link_div}>
+            {/* Contains dummy links for now */}
             <Link href={link} passHref legacyBehavior>
               <a className={styles.link} target='_blank'>
                 Workshop {number} <FaArrowRightLong />
               </a>
             </Link>
         </div> 
-
-
       </div>
     </motion.div>
   )

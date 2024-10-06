@@ -1,9 +1,8 @@
-"use client"
+"use client" // Necessary for now to use workshops.json data
 
 import Card from './Card'
 import styles from './workshop-timeline.module.scss'
 import workshops from "./workshops.json";
-import React from 'react';
 
 export default function Timeline() {
     return (
@@ -15,6 +14,7 @@ export default function Timeline() {
               in-depth tutorials on HTML, CSS, JavaScript, and more!
             </p>
           </div>
+          
           <div className={styles.timeline}>
             <div className={styles.workshops}>
               {workshops.map(( { title, text, agenda, link} , idx) => 
