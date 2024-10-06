@@ -21,18 +21,8 @@ export default function Timeline() {
                 <Card key={idx} title={title} text={text} agenda={agenda} link={link} number={idx + 1} />
               )}
             </div>
-            {/* <div className={styles.scrolldots}>
-              
-            </div> */}
           </div>
         </div>
     )
 }
 
-{/* {Array.from({ length: workshops.length - 1 }, (_, idx) => 
-                <React.Fragment key={idx}>
-                  {bullet}
-                  {line}
-                </React.Fragment>
-              )}
-              {bullet} */}

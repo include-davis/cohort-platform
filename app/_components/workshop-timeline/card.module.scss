@@ -1,15 +1,11 @@
-$card-height: auto;
-$line-height-open: $card-height - calc(8px * 15);
-
-$card-height-closed: calc(8px * 20);
-$line-height-closed: $card-height-closed - calc(8px * 15);
-
 .card {
-    color: var(--text-midtone);
+    --card-height-closed: calc(8px * 21);
 
+    color: var(--text-midtone);
+    border: 1px red solid;
     position: relative;
     border-radius: 20px;
-    height: $card-height;
+    // height: $card-height-open;
 }
 
 .card_front {
@@ -46,10 +42,8 @@ $line-height-closed: $card-height-closed - calc(8px * 15);
 .card_content {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     gap: 32px;
 
-    height: 100%;
     padding: 24px 0px 24px 24px;
 }
 
@@ -105,30 +99,35 @@ $line-height-closed: $card-height-closed - calc(8px * 15);
 
 .line_open {
     width: 2px;
-    height: 270px;
+    height: 100%;
     background-color: var(--foreground-light);
+    transition: height 0.5s ease
 }
 
 .line_closed {
     width: 2px;
-    height: 160px;
+    height: 100%;
     background-color: var(--foreground-light);
     transition: height 0.5s ease
 }
 
 .line_top {
     position: absolute;
-    top: 0;
+    top: calc(var(--card-spacing) / 2 * -1 - 1px);
     right: -47px;
-    transform: translate(-50%, -50%);
-    transition: height 0.5s ease
+    height: calc(50% + var(--card-spacing) / 2);
+    // border: black 1px solid;
+    // transform: translate(-50%, -50%);
 }
 
 .line_bottom {
     position: absolute;
-    bottom: 0;
+    bottom: calc(var(--card-spacing) / 2 * -1 - 1px);
     right: -47px;
-    transform: translate(-50%, 50%);
+    // height: 50%;
+    height: calc(50% + var(--card-spacing) / 2);
+    // border: black 1px solid;
+    // transform: translate(-50%, 50%);
 }
 
 .bullet {
