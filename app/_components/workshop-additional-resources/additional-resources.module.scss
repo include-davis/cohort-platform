@@ -1,0 +1,25 @@
+.mainBodyContainer {
+    background-color: var(--background-light);
+    h3 {
+        font-size: 3.25rem;
+        color: var( --text-midtone);
+        
+    }
+}
+
+.tab{
+    
+    position: relative; 
+    width: 300px;
+    height: 100px;
+    background-color: var(--background-light);
+    overflow: hidden;
+    mask-image: linear-gradient(to left bottom, transparent 100px, black 0);
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    justify-content: center;
+}

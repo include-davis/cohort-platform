@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Figma",
+        "type": "Website", 
+        "image": "/images/filler.jpeg",
+        "link": "https://flukeout.github.io/"
+    },
+    {
+        "title": "CSS Selector Game",
+        "type": "Website", 
+        "image": "/images/filler.jpeg", 
+        "link": "https://flukeout.github.io/"
+    },
+    {
+        "title": "Installing Git",
+        "type": "Website", 
+        "image": "/images/filler.jpeg",
+        "link": "https://flukeout.github.io/"
+    },
+    {
+        "title": "CSS Cheat Sheet",
+        "type": "Website", 
+        "image": "/images/filler.jpeg",
+        "link": "https://flukeout.github.io/"
+    },
+    {
+        "title": "HTML Semantics",
+        "type": "Website", 
+        "image": "/images/filler.jpeg",
+        "link": "https://flukeout.github.io/"
+    },
+    {
+        "title": "HTML File Setup",
+        "type": "Website", 
+        "image": "/images/filler.jpeg",
+        "link": "https://flukeout.github.io/"
+    }
+]
