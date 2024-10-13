@@ -5,15 +5,29 @@ import styles from "./workshop.module.scss";
 
 // params: { num: string }
 export default function Workshop({ params }){
-    const workshopTitles = [[1, "Intro to Web Dev"], [2, "HTML and CSS"], [3, "JavaScript"], [4, "React.js and Next.js"], [5, "APIs and Backend"]];
+    const workshopTitles = ["Intro to Web Dev", "HTML and CSS", "JavaScript", "React.js and Next.js", "APIs and Backend"];
+    const navItems = []
+    for (let i = 0; i < workshopTitles.length; i ++) {
+        navItems.push([i + 1, workshopTitles[i]])
+        if (i != workshopTitles.length - 1){
+            navItems.push([workshopTitles.length * 2 - i, "divider"]);
+        }
+    }
     const [num, setNum] = useState(params.num);
 
     return(
         <div className={styles.workshop}>
             <nav className={styles.workshopNav}>
-                { workshopTitles.map((workshop) => 
-                    <div className={[styles.navTab, (workshop[0] == 1) ? styles.firstNavTab : styles.laterNavTab, (workshop[0] == num)? styles.selectedTab : null].join(' ')} key={workshop[0]}>
-                        <p>{workshop[1]}</p>
+                { navItems.map((item) => 
+                    <div key={item[0]} className={styles.tabContainer}>
+                        { item[1] == "divider" ?
+                            <div className={styles.divider}></div>
+                            :
+                            <div className={[styles.navTab, (item[0] == 1) ? styles.firstNavTab : styles.laterNavTab, (item[0] == num)? styles.selectedTab : null].join(' ')}>
+                                {item[0] == num && <div className={styles.overlap}></div>}
+                                <p>{item[1]}</p>
+                            </div>
+                        }
                     </div>
                 ) }
             </nav>

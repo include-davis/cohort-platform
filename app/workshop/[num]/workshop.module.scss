@@ -1,41 +1,74 @@
 .workshop {
     --skew-angle: 20deg;
+    --tab-width: 400px;
+    --nav-height: 67px;
+    font-size: 1.5rem;
 }
 
 .workshopNav {
     background-color: var(--include-purple-light);
     display: flex;
-    gap: 40px;
-    padding: 20px;
+    // border: 1px solid blue;
+    height: var(--nav-height);
+    overflow: auto;
+}
+
+.tabContainer {
+    // padding: 20px;
+    color: white;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
 }
 
 .navTab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    color: white;
-    border: 1px solid red;
-    // 
-    
+    padding-left: 40px;
+    // border: 1px solid blue;
 }
 
-.firstNavTab {
-    transform: perspective(10px) rotateX(1deg) skewx(8deg);
-}
+// .firstNavTab {
+//     transform: perspective(var(--first-perspective)) rotateX(var(--first-rotate)) skewx(var(--first-skew)) translateY(var(--first-translate)) scaleY(var(--first-scale));
+//     border: 1px solid red;
+// }
 
-.firstNavTab > p {
-    color: red;
-    transform: perspective(10px) rotateX(-1deg) skewx(-8deg);
-}
+// .firstNavTab > p {
+//     transform: perspective(var(--first-perspective)) rotateX(calc(-1 * var(--first-rotate))) skewx(calc(-1 * var(--first-skew))) translateY(calc(-1 * var(--first-translate)));
+// }
 
-.laterNavTab {
+.navTab {
     transform: perspective(20px) skewx(var(--skew-angle));
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    width: var(--tab-width);
 }
 
-.laterNavTab > p {
+.navTab > * {
     transform: skewx(calc(var(--skew-angle) * -1));
-    border: 1px solid blue;
+}
+
+.overlap {
+    position: absolute;
+    // left: -10px;
+    left: -15px;
+    background-color: white;
+    height: var(--nav-height);
+    width: 30px;
 }
 
 .selectedTab {
     background-color: white;
     color: black;
+}
+
+.divider {
+    background-color: white;
+    // padding: 20px;
+    transform: skewx(var(--skew-angle));
 }
