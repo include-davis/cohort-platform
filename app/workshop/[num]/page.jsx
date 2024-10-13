@@ -10,7 +10,7 @@ export default function Workshop({ params }){
     for (let i = 0; i < workshopTitles.length; i ++) {
         navItems.push([i + 1, workshopTitles[i]])
         if (i != workshopTitles.length - 1){
-            navItems.push([workshopTitles.length * 2 - i, "divider"]);
+            navItems.push([workshopTitles.length * 2 - i, `d${i}`]);
         }
     }
     const [num, setNum] = useState(params.num);
@@ -20,8 +20,10 @@ export default function Workshop({ params }){
             <nav className={styles.workshopNav}>
                 { navItems.map((item) => 
                     <div key={item[0]} className={styles.tabContainer}>
-                        { item[1] == "divider" ?
-                            <div className={styles.divider}></div>
+                        { item[1][0] == "d" ?
+                            <div className={styles.dividerContainer}>
+                                {item[1][1] != num - 1 && <div className={styles.divider}></div>}
+                            </div>
                             :
                             <div className={[styles.navTab, (item[0] == 1) ? styles.firstNavTab : styles.laterNavTab, (item[0] == num)? styles.selectedTab : null].join(' ')}>
                                 {item[0] == num && <div className={styles.overlap}></div>}

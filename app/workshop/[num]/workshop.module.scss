@@ -8,15 +8,12 @@
 .workshopNav {
     background-color: var(--include-purple-light);
     display: flex;
-    // border: 1px solid blue;
     height: var(--nav-height);
     overflow: auto;
 }
 
 .tabContainer {
-    // padding: 20px;
     color: white;
-    // border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -29,21 +26,10 @@
     align-items: center;
     padding: 20px;
     padding-left: 40px;
-    // border: 1px solid blue;
 }
-
-// .firstNavTab {
-//     transform: perspective(var(--first-perspective)) rotateX(var(--first-rotate)) skewx(var(--first-skew)) translateY(var(--first-translate)) scaleY(var(--first-scale));
-//     border: 1px solid red;
-// }
-
-// .firstNavTab > p {
-//     transform: perspective(var(--first-perspective)) rotateX(calc(-1 * var(--first-rotate))) skewx(calc(-1 * var(--first-skew))) translateY(calc(-1 * var(--first-translate)));
-// }
 
 .navTab {
     transform: perspective(20px) skewx(var(--skew-angle));
-    // border: 1px solid red;
     display: flex;
     flex-direction: row;
     width: var(--tab-width);
@@ -55,7 +41,6 @@
 
 .overlap {
     position: absolute;
-    // left: -10px;
     left: -15px;
     background-color: white;
     height: var(--nav-height);
@@ -67,8 +52,15 @@
     color: black;
 }
 
-.divider {
-    background-color: white;
-    // padding: 20px;
+.dividerContainer {
     transform: skewx(var(--skew-angle));
+    width: 2px;
+    margin: 8px 0;
+    display: flex;
+    align-items: stretch;
+}
+
+.divider {
+    flex: 1;
+    background-color: white;
 }
