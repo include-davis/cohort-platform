@@ -5,10 +5,10 @@ import styles from "./workshop.module.scss";
 
 // params: { num: string }
 export default function Workshop({ params }){
-    const workshopTitles = ["Intro to Web Dev", "HTML and CSS", "JavaScript", "React.js and Next.js", "APIs and Backend"];
+    const workshopTitles = ["", "Intro to Web Dev", "HTML and CSS", "JavaScript", "React.js and Next.js", "APIs and Backend"];
     const navItems = []
-    for (let i = 0; i < workshopTitles.length; i ++) {
-        navItems.push([i + 1, workshopTitles[i]])
+    for (let i = 1; i < workshopTitles.length; i ++) {
+        navItems.push([i, workshopTitles[i]])
         if (i != workshopTitles.length - 1){
             navItems.push([workshopTitles.length * 2 - i, `d${i}`]);
         }
@@ -22,7 +22,7 @@ export default function Workshop({ params }){
                     <div key={item[0]} className={styles.tabContainer}>
                         { item[1][0] == "d" ?
                             <div className={styles.dividerContainer}>
-                                {item[1][1] != num - 1 && <div className={styles.divider}></div>}
+                                {item[1][1] != num && <div className={styles.divider}></div>}
                             </div>
                             :
                             <div className={[styles.navTab, (item[0] == 1) ? styles.firstNavTab : styles.laterNavTab, (item[0] == num)? styles.selectedTab : null].join(' ')}>
