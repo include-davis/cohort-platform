@@ -1,0 +1,41 @@
+.workshop {
+    --skew-angle: 20deg;
+}
+
+.workshopNav {
+    background-color: var(--include-purple-light);
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.navTab {
+    padding: 20px;
+    color: white;
+    border: 1px solid red;
+    // 
+    
+}
+
+.firstNavTab {
+    transform: perspective(10px) rotateX(1deg) skewx(8deg);
+}
+
+.firstNavTab > p {
+    color: red;
+    transform: perspective(10px) rotateX(-1deg) skewx(-8deg);
+}
+
+.laterNavTab {
+    transform: perspective(20px) skewx(var(--skew-angle));
+}
+
+.laterNavTab > p {
+    transform: skewx(calc(var(--skew-angle) * -1));
+    border: 1px solid blue;
+}
+
+.selectedTab {
+    background-color: white;
+    color: black;
+}
