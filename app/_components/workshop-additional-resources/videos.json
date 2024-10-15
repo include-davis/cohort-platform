@@ -1,0 +1,28 @@
+[
+    {
+        "title": "HTML Basics",
+        "description": "Watch the video above for more in-depth information regarding coding in HTML.",
+        "filename": "youtube_0W6qz0-aDaM_1920x1080_h264.mp4",
+        "sections": [
+            { "label": "Introduction", "start": "0m0s", "end": "3m0s"},
+            { "label": "HTML File Setup", "start": "0m0s", "end": "3m0s"},
+            { "label": "HTML Tags", "start": "3m1s", "end": "6m0s"},
+            { "label": "Semantics", "start": "6m1s", "end": "9m0s"},
+            { "label": "General Rules", "start": "9m1s", "end": "15m0s"},
+            { "label": "Overview", "start": "15m1s", "end": "20m0s"}
+        ]
+    }, 
+    {
+        "title": "Introduction to CSS",
+        "description": "Watch the video above for more in-depth information writing CSS.",
+        "filename": "youtube_0W6qz0-aDaM_1920x1080_h264.mp4",
+        "sections": [
+            { "label": "Introduction", "start": "0m0s", "end": "3m0s"},
+            { "label": "Inline, Internal, External CSS", "start": "0m0s", "end": "3m0s"},
+            { "label": "Elements", "start": "3m1s", "end": "6m0s"},
+            { "label": "Properties", "start": "6m1s", "end": "9m0s"},
+            { "label": "Values", "start": "9m1s", "end": "15m0s"},
+            { "label": "Overview", "start": "15m1s", "end": "20m0s"}
+        ]
+    }
+]

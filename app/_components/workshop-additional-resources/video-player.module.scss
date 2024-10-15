@@ -1,0 +1,15 @@
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+
+
+    h3 {
+        font-size: 1.5rem;
+        padding: 0; 
+        
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}

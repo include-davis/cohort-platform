@@ -1,0 +1,62 @@
+.mainContainer {
+    margin: 20px;
+    background-color: var(--foreground-light);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex; /* Change to flexbox */
+    justify-content: space-between; /* Space evenly */
+    align-items: center; /* Center vertically */
+    margin-bottom: 10px;
+    background-color: var(--include-purple);
+
+    h3 {
+        font-size: 1.5rem; /* Ensure correct size */
+        color: var(--text-light);
+        margin: 0; /* Remove default margin */
+        text-align: center; /* Center text */
+        flex: 1; /* Allow to take full width */
+    }
+
+
+}
+
+.body {
+    
+}
+
+.gridRow {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.rowButton {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%; 
+    padding: 10px; 
+    border: none; 
+    cursor: pointer; 
+    text-align: center; 
+    outline: none; 
+    background-color: var(--foreground-light);
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1); /* Darker background on hover */
+    }
+    
+}
+
+.sectionTitle {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.timeStamp {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
