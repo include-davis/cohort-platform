@@ -27,7 +27,7 @@ export default function Workshop({ params }){
                             :
                             <div className={[styles.navTab, (item[0] == 1) ? styles.firstNavTab : styles.laterNavTab, (item[0] == num)? styles.selectedTab : null].join(' ')}>
                                 {item[0] == num && <div className={styles.overlap}></div>}
-                                <p>{item[1]}</p>
+                                <p>{item[0]}: {item[1]}</p>
                             </div>
                         }
                     </div>

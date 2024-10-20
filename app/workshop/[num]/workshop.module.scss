@@ -1,15 +1,16 @@
 .workshop {
     --skew-angle: 20deg;
     --tab-width: 400px;
-    --nav-height: 67px;
+    --max-nav-height: 100px;
     font-size: 1.5rem;
 }
 
 .workshopNav {
-    background-color: var(--include-purple-light);
+    background-color: var(--include-purple);
     display: flex;
-    height: var(--nav-height);
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-height: var(--max-nav-height);
 }
 
 .tabContainer {
@@ -43,13 +44,15 @@
     position: absolute;
     left: -15px;
     background-color: white;
-    height: var(--nav-height);
+    height: var(--max-nav-height);
+    height: 100px;
     width: 30px;
 }
 
 .selectedTab {
     background-color: white;
     color: black;
+    font-weight: bold;
 }
 
 .dividerContainer {
