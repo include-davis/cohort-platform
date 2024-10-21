@@ -1,5 +1,6 @@
 .mainBodyContainer {
     background-color: var(--background-light);
+    padding-bottom: 325px;
     
     h3 {
         font-size: 3.25rem;
@@ -28,4 +29,9 @@
 
 .videoContainer {
     display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 145px;
+    padding-bottom: 104px;
+    
 }

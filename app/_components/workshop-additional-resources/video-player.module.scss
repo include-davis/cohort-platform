@@ -1,15 +1,28 @@
+.videoContainer {
+    display: flex;
+    //width: 1437px;
+    gap: 58px;
+}
+
 .textContainer {
     display: flex;
     flex-direction: column;
-    gap: 30px; 
+    gap: 10px; 
+    width: 625px; 
+    
 
 
     h3 {
+        
         font-size: 1.5rem;
         padding: 0; 
+        color: var(--text-midtone);
+        font-weight: 700;
         
     }
     p {
         font-size: 1.5rem;
+        color: var(--text-midtone);
+        font-weight: 300;
     }
 }

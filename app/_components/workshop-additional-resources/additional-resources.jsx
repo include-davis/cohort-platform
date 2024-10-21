@@ -5,7 +5,6 @@ import Card from './card'
 import cards from './cards.json';
 import VideoPlayer from './video-player';
 import videos from './videos.json';
-import VideoTimestamps from './video-timestamps';
 
 
 export default function AdditionalResources() {
@@ -18,17 +17,16 @@ export default function AdditionalResources() {
                 <h3>Additional Resources</h3>
 
                 <div className = {styles.videoContainer}>
-                    {/* Video Player */}
-                    <VideoPlayer 
-                        videoSrc={`/videos/${video.filename}`} 
-                        setVideoRef={setVideoRef} 
-                        title={video.title} 
-                        description={video.description}
-                    />
-
-                    {/* Video Timestamps */}
-                    <VideoTimestamps sections={video.sections} videoRef={videoRef} />
-
+                    {/* Add more videos as needed here */}
+                    {videos.map((video, index) => (
+                        <VideoPlayer 
+                            key={index} 
+                            videoSrc={video.videoSrc} 
+                            setVideoRef={setVideoRef}
+                            title={video.title} 
+                            description={video.description}
+                        />
+                    ))}
                 </div>
 
                 <div className={styles.cardsContainer}>

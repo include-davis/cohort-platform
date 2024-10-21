@@ -1,26 +1,19 @@
-import { useRef } from 'react';
-import styles from './video-player.module.scss'
+import styles from './video-player.module.scss';
 
-export default function VideoPlayer({ videoSrc, setVideoRef, title, description }) {
-    const videoRef = useRef(null);
-
-    setVideoRef(videoRef);
-
+export default function VideoPlayer({ videoSrc, title, description }) {
     return (
         <div className={styles.videoContainer}>
-            <video
-                ref={videoRef}
+            <iframe
                 width="754"
                 height="452"
-                controls
-                autoPlay
-            >
-                <source src={videoSrc} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+                src={videoSrc}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+            ></iframe>
             <div className={styles.textContainer}>
-                <h3>{title}</h3> 
-                <p>{description}</p> 
+                <h3>{title}</h3>
+                <p>{description}</p>
             </div>
         </div>
     );
