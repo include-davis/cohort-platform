@@ -17,7 +17,6 @@ export default function AdditionalResources() {
                 <h3>Additional Resources</h3>
 
                 <div className = {styles.videoContainer}>
-                    {/* Add more videos as needed here */}
                     {videos.map((video, index) => (
                         <VideoPlayer 
                             key={index} 
