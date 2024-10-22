@@ -1,4 +1,4 @@
-import styles from './contact.module.scss'
+import styles from './contact.module.scss';
 import Image from 'next/image';
 
 export function Individual({ name, image, role, pronouns, phone, email, linkedin }){
