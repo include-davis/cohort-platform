@@ -10,9 +10,13 @@
     padding: 15%;
     padding: 2rem 2rem;
     text-align: center;
+
     .individual_card {
+        padding-left: 5%;
         display: inline-block;
-        padding: 3%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-right: 3%;
         margin: 15px;
         vertical-align: middle;
         background-color: white;
@@ -25,7 +29,23 @@
     .top_card {
         display: inline-block;
         text-align: left;
+        padding: 5%;
+        font-size: 1.2rem;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 15px;
+            scale: 2;
+        }
+    }
+
+    .bottom_card {
+        margin-top: 10px;
+        padding-left: 2%;
         line-height: 150%;
-        margin-bottom: 5px;
+        font-size: 1.2rem;
     }
 }

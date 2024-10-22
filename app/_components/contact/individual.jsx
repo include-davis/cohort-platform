@@ -14,9 +14,9 @@ export function Individual({ name, image, role, pronouns, phone, email, linkedin
                 <p>{pronouns}</p>
             </div>
 
-            <div>
-                <p>{phone}</p>
-                <p>{email}</p>
+            <div className={styles.bottom_card}>
+                <p>📞 {phone}</p>
+                <p>✉️ {email}</p>
                 <p>{linkedin}</p>
             </div>
         </div>
