@@ -22,6 +22,7 @@ const bullet = (
   </motion.div>
 );
 
+// Every Card is connected to a bullet with a line going through it
 export default function Card( {title, text, agenda, link, number} ) {
 
   const [isHovered, setIsHovered] = useState(false);
@@ -44,10 +45,12 @@ export default function Card( {title, text, agenda, link, number} ) {
     >
       <div className={styles.number}>{number}</div>
       
+      {/* Don't show line at the top and bottom of the line of bullets*/}
       <div className={number != 1 ? styles.line_top : styles.line_none}>{line}</div>
       <div className={styles.bullet}>{bullet}</div>
       <div className={number != 5 ? styles.line_bottom : styles.line_none}>{line}</div>
 
+      {/* The content fore every card */}
       <div className={styles.card_front}>
         <div className={styles.card_content}>
           {/* This has the title and description together in the same div*/}
