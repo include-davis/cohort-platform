@@ -1,3 +1,5 @@
+@use '../../mixins.scss';
+
 .card {
     // Height will change based on screen size mixins in the future
     --card-height-closed: calc(8px * 21);
@@ -5,6 +7,10 @@
     color: var(--text-midtone);
     position: relative;
     border-radius: 20px;
+
+    @include mixins.tablet {
+        --card-height-closed: calc(8px * 18);
+    }
 }
 
 .card_front {
@@ -20,9 +26,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    height: 50px;
-    width: 50px;
 
     position: absolute;
     transform: translate(-50%, -50%); // Translates from top left corner placement to center
@@ -32,7 +35,10 @@
 
     background-color: var(--foreground-light);
     border-radius: 50%;
-    border: 1px solid var(--include-purple-light)
+    border: 1px solid var(--include-purple-light);
+
+    height: 50px;
+    width: 50px;
 }
 
 .line_none {
@@ -56,6 +62,10 @@
 .title {
     font-size: 2rem;
     font-weight: 700;
+
+    @include mixins.tablet {
+        font-size: 1.6rem
+    } 
 }
 
 .agenda {
@@ -78,6 +88,11 @@
     padding-left: 24px;
 
     background-color: var(--foreground-light);
+
+    @include mixins.tablet {
+        padding: 24px 0px;
+        padding-left: 24px;
+    }
 }
 
 
@@ -85,7 +100,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 8px;
 
     padding: 8px;
     border-radius: 10px;
@@ -93,6 +108,10 @@
     
     background-color: var(--include-purple);
     color: var(--text-light);
+
+    @include mixins.tablet {
+        width: 170px;
+    } 
 }
 
 // Scroll line styles adapted and modified from include 2023 website code: 
