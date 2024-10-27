@@ -1,4 +1,39 @@
+$component-height: calc(8px * 142);
+
 .content {
+    --skew-angle: -20deg;
+    --tab-width: 1000px;
+    --tab-height: 96px;
+    
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(8px * 9);
+    
     background: var(--include-gradient);
     color: var(--text-light);
+    text-align: center;
+    font-size: larger;
+    
+    height: $component-height;
+    padding-top: calc(calc(8px * 22) + var(--tab-height));
+
+    p {
+        font-weight: 300;
+        padding-bottom: calc(8px * 9);
+    }
+}
+
+.overlap {
+    position: absolute;
+    top: 0;
+    left: -15px;
+
+    background-color: white;
+    transform: skewx(var(--skew-angle));
+    
+    height: var(--tab-height);
+    width: 75vw;
 }

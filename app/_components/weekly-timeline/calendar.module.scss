@@ -1,0 +1,58 @@
+.content {
+    background-color: var(--foreground-light);
+    color: var(--text-dark);
+    border-radius: 16px;
+
+    width: 90%;
+    height: calc(8px * 55);
+    padding: 32px 0px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    border: green 1px solid;
+}
+
+.calendar {
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 1 row = 1%! */
+
+    height: 100%;
+}
+
+.days {
+    display: flex;
+}
+
+.day {
+    text-align: center;
+    width: calc(8px * 22);
+    font-weight: bold;
+}
+
+.line {
+    width: 2px;
+    height: 100%; /* Adjust height as needed */
+    background: repeating-linear-gradient(
+        to bottom,
+        black 0,
+        black 10px,  /* Length of the dash */
+        transparent 10px,
+        transparent 20px /* Space between dashes */
+    );
+}
+
+.agenda {
+    position: absolute;
+    top: 32px;
+    left: 8px;
+    
+    height: calc(100% - 32px); /* Account for top shift */
+    width: 100%;
+    
+    border: 1px red solid;
+}
