@@ -1,0 +1,29 @@
+.tab{
+    height: 100px; 
+    background: var(--include-gradient);
+    clip-path: polygon(
+        calc(100% - 300px) 0,    
+        100% 0,                 
+        100% 100%,               
+        calc(100% - 374px) 100%  
+    );
+}
+
+
+.mainBodyContainer {
+    background: var(--include-gradient);
+    h2 {
+        text-align: center;
+        color: var(--text-light);
+        padding-top: 170px;
+        padding-bottom: 60px;
+        font-weight: 700;
+        font-size: 3.875rem;
+      }
+}
+
+.sandpackContainer {
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 216px;
+}
