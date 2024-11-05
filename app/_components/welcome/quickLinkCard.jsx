@@ -11,7 +11,7 @@ export function QuickLinkCard({ image, title }){
                 <div className={styles.link_icon}>
                     <Image src={image} alt={image} fill={true}/>
                 </div>
-                <h3>{title}</h3>
+                <p>{title}</p>
                 <button className={styles.link_button}>View More </button>
             </div>
         </div>
