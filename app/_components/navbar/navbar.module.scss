@@ -14,27 +14,36 @@
     align-items: center;
     margin-left: 5%;
   }
+  
+  .navLinks {
+    display: flex;
+    gap: 2rem;
+    z-index: 1; 
+  }
+  
   .text{
     font-size: 0.75rem;
     color: var(--text-midtone)
   }
   
-  .navLinks {
+  
+  .filetab {
     display: flex;
     align-items: center;
-  }
-  
-  
-.filetab{
-display: flex;
-  align-items: center;
-  gap: 2rem;
-  background-color: var(--background-light);
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem; 
-
+    justify-content: flex-end;
+    position: relative;
+    width: auto;
+    gap: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1%;
   }
 
-
+  .fileTabImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    height: auto;
+  }
 
 
