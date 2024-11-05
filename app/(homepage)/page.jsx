@@ -7,8 +7,8 @@ export default function Home() {
     <>
       <div className={styles.page}>
           <Welcome/>
+          <Timeline />
       </div>
-      <Timeline />
     </>
   );
 }

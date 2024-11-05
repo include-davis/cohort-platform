@@ -8,13 +8,16 @@
     background: var(--include-gradient);
     color: var(--text-light);
     padding: calc(8px * 16) calc(8px * 12);
-
+    padding-top: calc(8px * 12 + var(--edge-spacing));
+    
     @include mixins.sm-desktop {
         padding: calc(8px * 16) calc(8px * 10);
+        padding-top: calc(8px * 10 + var(--edge-spacing));
     }
     
     @include mixins.tablet {
         padding: calc(8px * 16) calc(8px * 8);
+        padding-top: calc(8px * 8 + var(--edge-spacing));
     } 
 }
 
