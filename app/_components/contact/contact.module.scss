@@ -1,51 +1,98 @@
+@use '@/app/mixins.scss';
+
 .container {
     background-color: #f9f9f9;
+    padding: var(--edge-spacing);
     h1 {
         color:#3d257e;
         text-align: center;
+        padding-bottom: 64px;
     }
 }
 
 .card_container {
-    padding: 15%;
-    padding: 2rem 2rem;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: space-between;
 
     .individual_card {
-        padding-left: 5%;
-        display: inline-block;
-        padding-top: 3%;
-        padding-bottom: 3%;
-        padding-right: 3%;
-        margin: 15px;
-        vertical-align: middle;
+        padding: 72px 80px;
         background-color: white;
         border-radius: 20px;
-        width: 35%;
-        text-align: left;
+        width: calc(50% - 32px);
         box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.05);
         line-height: 150%;
     }
     .top_card {
-        display: inline-block;
-        text-align: left;
-        padding: 5%;
-        font-size: 1.2rem;
+        display: flex;
+        gap: 32px;
+        margin-bottom: 32px;
 
-        h2 {
-            margin-bottom: 10px;
+        .photo {
+            position: relative;
+            height: 125px;
+            aspect-ratio: 1;
+            object-fit: contain;
+
+            img {
+                border-radius: 15px;
+            }
         }
 
-        img {
-            border-radius: 15px;
-            scale: 2;
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+            h2 {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1rem;
+            }
         }
     }
 
     .bottom_card {
-        margin-top: 10px;
-        padding-left: 2%;
+        padding-left: 10px;
         line-height: 150%;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+
+        svg {
+            vertical-align: middle;
+        }
+    }
+}
+
+@include mixins.tablet{
+    .container > h1 {
+            padding-bottom: 32px;
+    }
+    
+    .card_container {
+        gap: 32px;
+    
+        .individual_card {
+            padding: 48px 64px;
+            width: calc(50% - 16px);
+        }
+        .top_card {
+            .photo {
+                height: 100px;
+            }
+    
+            .text {
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    
+        .bottom_card {
+            font-size: 1rem;
+        }
     }
 }

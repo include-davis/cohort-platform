@@ -1,23 +1,29 @@
 import styles from './contact.module.scss';
 import Image from 'next/image';
+import { TbBrandLinkedin } from "react-icons/tb";
+import { TbMail } from "react-icons/tb";
+import { TbPhone } from "react-icons/tb";
 
-export function Individual({ name, image, role, pronouns, phone, email, linkedin }){
+export function Individual({ props }){
+    const { name, image, role, pronouns, phone, email, linkedin } = props
+
     return(
         <div className={styles.individual_card}>
-            <div className={styles.top_card}>
-                <Image src={image} width={50} height={50}/>
-            </div>
             
             <div className={styles.top_card}>
-                <h2>{name}</h2>
-                <p>{role}</p>
-                <p>{pronouns}</p>
+                <div className={styles.photo}>
+                    <Image src={image} alt={`${role} - ${name}`} fill={true}/>
+                </div>
+                <div className={styles.text}>
+                    <h2>{name}</h2>
+                    <p>{role} <br/> {pronouns}</p>
+                </div>
             </div>
 
             <div className={styles.bottom_card}>
-                <p>📞 {phone}</p>
-                <p>✉️ {email}</p>
-                <p>{linkedin}</p>
+                <p><TbPhone/>   {phone}</p>
+                <p><TbMail/>    {email}</p>
+                <p><TbBrandLinkedin/>   {linkedin}</p>
             </div>
         </div>
     );
