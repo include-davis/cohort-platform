@@ -1,49 +1,39 @@
 /* components/Navbar.module.css */
 
 .navbar {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--include-purple); 
+    background: var(--include-gradient);   
     width: 100%;
-    height: 4rem;
+    height: 72px;
+    padding-left: var(--edge-spacing);
   }
   
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 5%;
-  }
+}
   
 .navLinks {
-display:flex;
-z-index: 1;     
-gap: 4rem;
-  }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;     
+  gap: 4rem;
+}
   
-  .text{
-    font-size: 0.75rem;
-    color: var(--text-midtone)
-  }
-  
-  
-  .filetab {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    width: auto;
-    padding: 6rem;
-    margin-top: 1rem;
-  }
+.text{
+  font-size: 0.75rem;
+  color: var(--text-midtone)
+}
 
-  .fileTabImage {
-    position: absolute;
-    top: 0;
-    bottom:0;
-    right: 0;
-    width: 100%; 
-    height: 100%;
-  }
+.filetab {
+  position: absolute;
 
-
+  bottom: -7px;
+  right: -6px;
+  width: 365px;
+  padding: 28px;
+}

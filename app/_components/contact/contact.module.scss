@@ -3,11 +3,20 @@
 .container {
     background-color: #f9f9f9;
     padding: var(--edge-spacing);
+    position: relative;
     h1 {
         color:#3d257e;
         text-align: center;
         padding-bottom: 64px;
     }
+}
+
+.filetab {
+    position: absolute;
+    top: -55px;
+    right: -6px;
+    width: 365px;
+    padding: 28px;
 }
 
 .card_container {
