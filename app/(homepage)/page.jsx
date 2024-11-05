@@ -12,7 +12,7 @@ export default function Home() {
           <Welcome/>
           <Timeline />
           <Contact/>
-    </div>
+      </div>
     </>
   );
 }
