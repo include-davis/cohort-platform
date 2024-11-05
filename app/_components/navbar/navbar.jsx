@@ -16,7 +16,7 @@ export default function Navbar() {
           <a href="/workshops" className={styles.text}>Workshops</a>
           <a href="/contact" className={styles.text}>Contact</a>
         </div>
-        <Image src={fileTab} alt="File Tab Background" className={styles.fileTabImage} />
+        <Image src={fileTab} alt="File Tab Background" className={styles.fileTabImage} 	style ={{ objectFit: "contain"}} fill={true} />
       </div>
     </nav>
   );
