@@ -45,7 +45,7 @@
 $time-columns: calc(7 * 24); /* 24 hours in the day */
 .agenda {
     position: absolute;
-    top: 32px;
+    top: 60px;
     left: 8px;
     
     display: grid;
@@ -65,5 +65,7 @@ $time-columns: calc(7 * 24); /* 24 hours in the day */
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size: 1.1rem;
     // border: 1px solid blue;
 }

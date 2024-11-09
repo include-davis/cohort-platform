@@ -1,4 +1,4 @@
-import styles from "@/app/_components/weekly-timeline/calendar.module.scss"
+import styles from "@/_components/weekly-timeline/calendar.module.scss"
 
 const weekdays = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"]
 
@@ -52,7 +52,6 @@ export default function Calendar({ week }) {
             >
               {eventItem.item}
             </div>)}
-          
         </div>
       </div>
     </div>
