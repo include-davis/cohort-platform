@@ -1,3 +1,5 @@
+@use "./mixins.scss";
+
 :root {
   --include-purple: #3C257E;
   --include-purple-light: #5a4b85;
@@ -14,10 +16,15 @@
   --edge-spacing: 100px;
   --card-spacing: calc(8px * 10);
   --folder-tab-width: 1076px;
+  --tab-height: 64px;
 
   --include-gradient: linear-gradient(90deg, #332950, #3C257E, #322D41);
 
   scroll-behavior: smooth;
+
+  @include mixins.tablet {
+    --edge-spacing: 64px;
+  }
 }
 
 * {

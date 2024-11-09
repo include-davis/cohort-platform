@@ -2,11 +2,11 @@ import styles from "@/_components/weekly-timeline/calendar.module.scss"
 
 const weekdays = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"]
 
-function getEventPlacement({ startDay, startTime, endDay, endTime}) {
+function getEventPlacement({ startDay, startInHalf, endDay, endBeforeHalf}) {
   // Days inputted 1 through 7 as integers
-  // 24 hour time inputted as decimal
+  // Half variables inputted as 1, 2 or 3 (for endDay=7)
   return {
-    gridColumn: `${(startDay - 1) * 24 + startTime} / ${(endDay - 1) * 24 + endTime}`,
+    gridColumn: `${(startDay-1)*2 + startInHalf} / ${(endDay-1)*2 + endBeforeHalf}`,
     gridRow: 'auto'
   }
 }
@@ -15,19 +15,19 @@ const events = [
   [
     {
       item: "Front-End Video",
-      placement: getEventPlacement({ startDay: 1, startTime: 12.0, endDay: 2, endTime: 12.0 })
-    },
-    {
-      item: "Figma",
-      placement: getEventPlacement({ startDay: 2, startTime: 19.0, endDay: 3, endTime: 15.0 })
+      placement: getEventPlacement({ startDay: 1, startInHalf: 1, endDay: 3, endBeforeHalf: 1 })
     },
     {
       item: "Workshop Slide Deck",
-      placement: getEventPlacement({ startDay: 3, startTime: 0, endDay: 4, endTime: 20.0 })
+      placement: getEventPlacement({ startDay: 2, startInHalf: 1, endDay: 4, endBeforeHalf: 2 })
+    },
+    {
+      item: "Figma",
+      placement: getEventPlacement({ startDay: 4, startInHalf: 1, endDay: 7, endBeforeHalf: 1 })
     },
     {
       item: "Something Else",
-      placement: getEventPlacement({ startDay: 5, startTime: 0, endDay: 7, endTime: 24.0 })
+      placement: getEventPlacement({ startDay: 5, startInHalf: 1, endDay: 7, endBeforeHalf: 3 })
     }
   ],
   []
