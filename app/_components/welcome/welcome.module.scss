@@ -1,5 +1,5 @@
 //for welcome.jsx
-.container {
+.container, .container_workshop {
     padding-left: var(--edge-spacing);
     padding-right: var(--edge-spacing);
     align-items: center;
@@ -7,6 +7,11 @@
     //for mobile: padding:0px;
     background-color: var(--background-light);
     position: relative;
+}
+
+.container_workshop {
+    color: var(--text-light);
+    background: var(--include-gradient);
 }
 .welcome {
     display:flex;
