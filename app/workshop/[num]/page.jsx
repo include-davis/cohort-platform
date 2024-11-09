@@ -5,6 +5,8 @@ import styles from "./workshop.module.scss";
 import Link from "next/link";
 import WorkshopWelcome from "@/_components/welcome/workshopWelcome";
 import WeeklyTimeline from "@/_components/weekly-timeline/weekly-timeline";
+import Box from "@/_components/materials-lessons/materials-lessons";
+import WorkshopNav from "@/_components/workshop-navigation/workshopNav";
 
 const workshopData = [
     {
@@ -35,23 +37,7 @@ export default function Workshop({ params }){
     return(
         <div className={styles.workshop}>
             <WorkshopWelcome title={`${num+1}: ${workshopData[num].title}`} text={workshopData[num].description} />
-            <nav className={styles.workshopNav}>
-                { workshopData.map((item, idx) => 
-                    <div key={idx} className={styles.tabContainer}>
-                        <Link href={`/workshop/${idx+1}`} 
-                            className={[styles.navTab, (idx == 1) ? styles.firstNavTab : styles.laterNavTab, (idx == num)? styles.selectedTab : null].join(' ')}
-                        >
-                            {idx == num && <div className={styles.overlap}></div>}
-                            <p>{idx+1}: {item.title}</p>
-                        </Link>
-                        <div className={styles.dividerContainer}>
-                            {idx != num && idx!=4 && 
-                                <div className={styles.divider}></div>
-                            }
-                        </div>
-                    </div>
-                ) }
-            </nav>
+            <WorkshopNav data={workshopData} num={num} />
             <div>
                 hello, welcome to week {num+1}! {workshopData[num].title}
             </div>

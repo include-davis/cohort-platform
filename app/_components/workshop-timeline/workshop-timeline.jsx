@@ -18,8 +18,8 @@ export default function Timeline() {
           {/* This is where the stack of cards go. The bullet and line is connected to each card */}
           <div className={styles.timeline}>
             <div className={styles.workshops}>
-              {workshops.map(( { title, text, agenda, link} , idx) => 
-                <Card key={idx} title={title} text={text} agenda={agenda} link={link} number={idx + 1} />
+              {workshops.map(( { title, text, agenda} , idx) => 
+                <Card key={idx} title={title} text={text} agenda={agenda} number={idx + 1} />
               )}
             </div>
           </div>

@@ -23,7 +23,7 @@ const bullet = (
 );
 
 // Every Card is connected to a bullet with a line going through it
-export default function Card( {title, text, agenda, link, number} ) {
+export default function Card( {title, text, agenda, number} ) {
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -69,8 +69,8 @@ export default function Card( {title, text, agenda, link, number} ) {
 
         <div className={styles.link_div}>
             {/* Contains dummy links for now */}
-            <Link href={link} passHref legacyBehavior>
-              <a className={styles.link} target='_blank'>
+            <Link href={`/workshop/${number}`} passHref legacyBehavior>
+              <a className={styles.link}>
                 Workshop {number} <FaArrowRightLong />
               </a>
             </Link>
