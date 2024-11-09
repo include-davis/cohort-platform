@@ -1,0 +1,37 @@
+.content {
+    --skew-angle: -20deg;
+    --tab-width: 1000px;
+    
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: var(--edge-spacing);
+    
+    background-color: var(--background-light);
+
+    color: var(--text-midtone);
+    text-align: center;
+    font-size: larger;
+}
+
+.filetab {
+    position: absolute;
+    top: -63px;
+    right: 0px;
+    width: 365px;
+    height: 70px;
+}
+
+.materials {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.link {
+    width: calc(50% - 20px);
+}
