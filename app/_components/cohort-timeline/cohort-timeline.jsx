@@ -1,7 +1,7 @@
 "use client" // Necessary for now to use workshops.json data
 
 import Card from './Card'
-import styles from './workshop-timeline.module.scss'
+import styles from './cohort-timeline.module.scss'
 import workshops from "./workshops.json";
 
 export default function Timeline() {
@@ -18,8 +18,8 @@ export default function Timeline() {
           {/* This is where the stack of cards go. The bullet and line is connected to each card */}
           <div className={styles.timeline}>
             <div className={styles.workshops}>
-              {workshops.map(( { title, text, agenda, link} , idx) => 
-                <Card key={idx} title={title} text={text} agenda={agenda} link={link} number={idx + 1} />
+              {workshops.map(( { title, text, agenda} , idx) => 
+                <Card key={idx} title={title} text={text} agenda={agenda} number={idx + 1} />
               )}
             </div>
           </div>

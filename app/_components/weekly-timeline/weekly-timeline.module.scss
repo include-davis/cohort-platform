@@ -1,5 +1,3 @@
-$component-height: calc(8px * 142);
-
 .content {
     --skew-angle: -20deg;
     --tab-width: 1000px;
@@ -16,8 +14,8 @@ $component-height: calc(8px * 142);
     text-align: center;
     font-size: larger;
     
-    padding: var(--edge-spacing);
-    padding-top: calc(var(--edge-spacing) + var(--tab-height));
+    padding: calc(var(--edge-spacing) + var(--tab-height)) var(--edge-spacing);
+
 
     p {
         font-weight: 300;
