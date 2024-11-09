@@ -45,7 +45,7 @@ export default function Contact(){
     return(
         <div className={styles.container}  id="contact">
             <div className={styles.filetab}>
-                <Image src="/navbar/filetab.svg" alt="File Tab Background" className={styles.filetabImage} 	style ={{ objectFit: "contain"}} fill={true} />
+                <Image src="/navbar/filetab.svg" alt="File Tab Background" className={styles.filetabImage} fill={true} />
             </div>
             <h1>Contacts</h1>
             <div className={styles.card_container}>
