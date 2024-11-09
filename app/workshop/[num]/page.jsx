@@ -1,13 +1,12 @@
-'use client';
+'use client'
 
-import { useState } from "react";
-import styles from "./workshop.module.scss";
-import Link from "next/link";
-import WorkshopWelcome from "@/_components/welcome/workshopWelcome";
-import WeeklyTimeline from "@/_components/weekly-timeline/weekly-timeline";
-import Box from "@/_components/materials-lessons/materials";
-import WorkshopNav from "@/_components/workshop-navigation/workshopNav";
-import Materials from "@/_components/materials-lessons/materials";
+import { useState } from "react"
+import styles from "./workshop.module.scss"
+import WorkshopWelcome from "@/_components/welcome/workshopWelcome"
+import WorkshopNav from "@/_components/(workshop)/workshop-navigation/workshopNav"
+import AssignmentBrief from "@/_components/(workshop)/assignment-brief/assignment-brief"
+import WeeklyTimeline from "@/_components/(workshop)/weekly-timeline/weekly-timeline"
+import Materials from "@/_components/(workshop)/materials-lessons/materials"
 
 const workshopData = [
     {
@@ -43,15 +42,13 @@ const workshopData = [
 ]
 
 export default function Workshop({ params }){
-    const [num, setNum] = useState(params.num-1);
+    const [num, setNum] = useState(params.num-1)
 
     return(
         <div className={styles.workshop}>
             <WorkshopWelcome title={`${num+1}: ${workshopData[num].title}`} text={workshopData[num].description} />
             <WorkshopNav data={workshopData} num={num} />
-            <div>
-                hello, welcome to week {num+1}! {workshopData[num].title}
-            </div>
+            <AssignmentBrief brief={`For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then create a “Skills” section. Create a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.`} tags={["flexbox", "html", "media queries"]} deadline="10.18.2024" />
             <WeeklyTimeline week={num+1}/>
             <Materials slideLink={workshopData[num].slideLink} recordingLink={workshopData[num].recordingLink} />
         </div>

@@ -1,4 +1,4 @@
-import styles from "@/_components/weekly-timeline/calendar.module.scss"
+import styles from "./calendar.module.scss"
 
 const weekdays = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"]
 

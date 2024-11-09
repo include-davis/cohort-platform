@@ -1,5 +1,5 @@
-import styles from "@/_components/weekly-timeline/weekly-timeline.module.scss"
-import Calendar from "@/_components/weekly-timeline/calendar"
+import styles from "./weekly-timeline.module.scss"
+import Calendar from "./calendar"
 
 export default function WeeklyTimeline({ week }) {
   return (
