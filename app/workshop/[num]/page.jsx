@@ -4,6 +4,7 @@ import { useState } from "react";
 import styles from "./workshop.module.scss";
 import Link from "next/link";
 import WorkshopWelcome from "@/_components/welcome/workshopWelcome";
+import WeeklyTimeline from "@/_components/weekly-timeline/weekly-timeline";
 
 const workshopData = [
     {
@@ -54,6 +55,7 @@ export default function Workshop({ params }){
             <div>
                 hello, welcome to week {num+1}! {workshopData[num].title}
             </div>
+            <WeeklyTimeline week={num+1}/>
         </div>
     )
 }
