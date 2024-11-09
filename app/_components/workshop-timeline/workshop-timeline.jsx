@@ -6,7 +6,7 @@ import workshops from "./workshops.json";
 
 export default function Timeline() {
     return (
-        <div className={styles.content}>
+        <div className={styles.content} id="workshops">
           <div className={styles.description}>
             <p className={styles.header}>Technical Workshops</p>
             <p className={styles.text}>

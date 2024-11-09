@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <div className={styles.page}>
           <Welcome/>
-          <Timeline />
+          <Timeline/>
           <Contact/>
-    </div>
+      </div>
     </>
   );
 }
