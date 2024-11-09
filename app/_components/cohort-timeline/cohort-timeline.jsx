@@ -1,7 +1,7 @@
 "use client" // Necessary for now to use workshops.json data
 
 import Card from './Card'
-import styles from './workshop-timeline.module.scss'
+import styles from './cohort-timeline.module.scss'
 import workshops from "./workshops.json";
 
 export default function Timeline() {
