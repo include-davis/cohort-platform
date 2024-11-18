@@ -7,14 +7,14 @@ export default function TryItOut({ defaultCode }) {
         <div className={styles.mainContainer}>
             <div className={styles.tab}></div>
             <div className={styles.mainBodyContainer}>
-                <h2>Try It Out! </h2>
+                <h1>Try It Out! </h1>
                 <div className={styles.sandpackContainer}>
                     <Sandpack
                         template="react"
                         options={{
                             showNavigator: true,
                             showLineNumbers: true,
-                            editorHeight: 1000,
+                            editorHeight: 500,
                             autorun: true,
                         }}
                         theme="dark"

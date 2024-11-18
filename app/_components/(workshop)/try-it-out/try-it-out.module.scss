@@ -1,29 +1,26 @@
-.tab{
-    height: 100px; 
+.mainContainer {
     background: var(--include-gradient);
-    clip-path: polygon(
-        calc(100% - 300px) 0,    
-        100% 0,                 
-        100% 100%,               
-        calc(100% - 374px) 100%  
-    );
+    position: relative;
 }
 
+.tab{
+    position: absolute;
+    top: 0;
+    left: -15px;
+
+    background-color: var(--background-light);
+    transform: skewx(var(--skew-angle));
+    
+    height: var(--tab-height);
+    width: 75vw;
+}
 
 .mainBodyContainer {
-    background: var(--include-gradient);
-    h2 {
+    padding: calc(var(--edge-spacing) + var(--tab-height)) var(--edge-spacing);
+
+    h1 {
         text-align: center;
         color: var(--text-light);
-        padding-top: 170px;
-        padding-bottom: 60px;
-        font-weight: 700;
-        font-size: 3.875rem;
-      }
-}
-
-.sandpackContainer {
-    padding-left: 74px;
-    padding-right: 74px;
-    padding-bottom: 216px;
+        margin-bottom: 40px;
+    }
 }
