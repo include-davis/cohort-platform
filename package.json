@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codesandbox/sandpack-react": "^2.19.9",
     "framer-motion": "^11.9.0",
     "link-preview-js": "^3.0.12",
     "next": "14.2.13",
