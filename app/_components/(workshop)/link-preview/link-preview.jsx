@@ -12,7 +12,7 @@ export default function LinkPreview({ title, description, link, theme }){
             setLoading(true)
             try {
                 const data = await getLinkPreview(link)
-                setPreviewImglink(data.images[0])
+                setPreviewImglink(data.images.length > 0 ? data.images[0] : "/images/filler.jpeg")
                 setLoading(false)
             } catch (error) {
                 console.error("Error fetching link preview:", error)

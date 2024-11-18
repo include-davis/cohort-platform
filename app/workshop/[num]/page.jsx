@@ -9,7 +9,7 @@ import WeeklyTimeline from "@/_components/(workshop)/weekly-timeline/weekly-time
 import Materials from "@/_components/(workshop)/materials-lessons/materialsLessons"
 import TryItOut from "@/_components/(workshop)/try-it-out/try-it-out";
 import { defaultCode } from "@/_components/(workshop)/try-it-out/default-code";
-import AdditionalResources from "@/_components/(workshop)/workshop-additional-resources/additional-resources";
+import AdditionalResources from "@/_components/(workshop)/additional-resources/additional-resources";
 
 const workshopData = [
     {

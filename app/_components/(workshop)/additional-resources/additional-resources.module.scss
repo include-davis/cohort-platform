@@ -1,0 +1,29 @@
+.mainContainer {
+    position: relative;
+    background-color: var(--background-light);
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    
+    padding: var(--edge-spacing);
+    
+    h1 {
+        width: 100%;
+        color: var(--text-midtone);
+        text-align: center;
+    }
+}
+
+.filetab {
+    position: absolute;
+    top: -63px;
+    right: 0px;
+    width: 365px;
+    height: 70px;
+}
+
+.card {
+    width: calc(calc(100% - 80px) / 3);
+}
