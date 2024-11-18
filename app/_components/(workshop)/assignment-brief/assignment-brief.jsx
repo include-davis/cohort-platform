@@ -1,7 +1,6 @@
 import styles from './assignment-brief.module.scss'
 
 export default function AssignmentBrief({ brief, tags, deadline }){
-    console.log(typeof brief)
     return(
         <div className={styles.container}>
             <div className={styles.content}>

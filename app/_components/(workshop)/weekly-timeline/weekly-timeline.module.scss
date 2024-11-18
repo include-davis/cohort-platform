@@ -1,7 +1,4 @@
-.content {
-    --skew-angle: -20deg;
-    --tab-width: 1000px;
-    
+.content {    
     position: relative;
     
     display: flex;
@@ -15,7 +12,6 @@
     font-size: larger;
     
     padding: calc(var(--edge-spacing) + var(--tab-height)) var(--edge-spacing);
-
 
     p {
         font-weight: 300;
