@@ -1,8 +1,10 @@
 import styles from './assignment-brief.module.scss'
 
-export default function AssignmentBrief({ brief, tags, deadline }){
+export default function AssignmentBrief({ props }){
+    const { brief, tags, deadline } = props
+    
     return(
-        <div className={styles.container}>
+        <div className={styles.container} id="assignment-brief">
             <div className={styles.content}>
                 <div className={styles.heading}>
                     <h1>Assignment Brief</h1>

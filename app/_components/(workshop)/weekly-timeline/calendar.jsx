@@ -11,29 +11,7 @@ function getEventPlacement({ startDay, startInHalf, endDay, endBeforeHalf}) {
   }
 }
 
-const events = [
-  [
-    {
-      item: "Front-End Video",
-      placement: getEventPlacement({ startDay: 1, startInHalf: 1, endDay: 3, endBeforeHalf: 1 })
-    },
-    {
-      item: "Workshop Slide Deck",
-      placement: getEventPlacement({ startDay: 2, startInHalf: 1, endDay: 4, endBeforeHalf: 2 })
-    },
-    {
-      item: "Figma",
-      placement: getEventPlacement({ startDay: 4, startInHalf: 1, endDay: 7, endBeforeHalf: 1 })
-    },
-    {
-      item: "Something Else",
-      placement: getEventPlacement({ startDay: 5, startInHalf: 1, endDay: 7, endBeforeHalf: 3 })
-    }
-  ],
-  []
-]
-
-export default function Calendar({ week }) {
+export default function Calendar({ timeline }) {
   return (
     <div className={styles.content}>
       <div className={styles.calendar}>
@@ -44,11 +22,11 @@ export default function Calendar({ week }) {
           </div>
         ))}
         <div className={styles.agenda}>
-          {events[week - 1].map((eventItem, idx) => 
+          {timeline.map((eventItem, idx) => 
             <div 
               key={idx} 
               className={styles.event} 
-              style={eventItem.placement}
+              style={getEventPlacement(eventItem)}
             >
               {eventItem.item}
             </div>)}

@@ -1,12 +1,9 @@
 "use client";
-import { useState } from 'react'; 
 import Image from 'next/image';
 import styles from './additional-resources.module.scss';
 import LinkPreview from '../link-preview/link-preview';
-import cards from './cards.json';
 
-
-export default function AdditionalResources() {
+export default function AdditionalResources({ resources }) {
     return (
         <div className={styles.mainContainer}>
             <div className={styles.filetab}>
@@ -14,12 +11,12 @@ export default function AdditionalResources() {
             </div>
             
             <h1>Additional Resources</h1>
-            {cards.map((card, index) => (
-                <div className={styles.card} key={index}>
+            {resources.map((resource, index) => (
+                <div className={styles.resource} key={index}>
                     <LinkPreview 
-                        title={card.title}
-                        description={card.type}
-                        link={card.link}
+                        title={resource.title}
+                        description={resource.type}
+                        link={resource.link}
                         theme="dark"
                     />
                 </div>

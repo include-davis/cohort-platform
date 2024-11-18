@@ -1,0 +1,45 @@
+{
+    "current_week": 1,
+    "links": {
+        "training_repo": "https://github.com/include-davis/tech-fw-2024",
+        "slack_invite": "https://join.slack.com/t/2nclude-at-davis/shared_invite/zt-2ugw1anrb-T35J5ehvjXVV1aBj6KeSuA"
+    },
+    "contacts": [
+        {
+            "name": "Haylie Tan",
+            "image": "/contacts/Haylie.jpg",
+            "role": "Tech Lead",
+            "pronouns": "she/her",
+            "phone": "(510)358-1578",
+            "email": "haytan@ucdavis.edu",
+            "linkedin": "haylie"
+        },
+        {
+            "name": "Haylie Tan",
+            "image": "/contacts/Michelle.jpg",
+            "role": "Tech Lead",
+            "pronouns": "she/her",
+            "phone": "(510)358-1578",
+            "email": "haytan@ucdavis.edu",
+            "linkedin": "haylie"
+        },
+        {
+            "name": "Haylie Tan",
+            "image": "/contacts/Naomi.jpg",
+            "role": "Tech Lead",
+            "pronouns": "she/her",
+            "phone": "(510)358-1578",
+            "email": "haytan@ucdavis.edu",
+            "linkedin": "haylie"
+        },
+        {
+            "name": "Haylie Tan",
+            "image": "/contacts/Cristian.jpg",
+            "role": "Tech Lead",
+            "pronouns": "she/her",
+            "phone": "(510)358-1578",
+            "email": "haytan@ucdavis.edu",
+            "linkedin": "haylie"
+        }
+    ]
+}

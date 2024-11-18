@@ -1,0 +1,627 @@
+[
+    {
+        "title": "Initial Setup",
+        "description": "Understand how the web works in prep for the rest of the workshops.", 
+        "agenda": [
+            "How The Internet Works",
+            "Workspace Setup",
+            "Overview of Web Development"
+        ],
+        "assignment": {
+            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then create a “Skills” section. Create a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
+            "tags": ["flexbox", "html", "media queries"],
+            "deadline": "10.18.2024"
+        },
+        "timeline": [
+            {
+                "item": "Front-End Video",
+                "startDay": 1, 
+                "startInHalf": 1, 
+                "endDay": 3, 
+                "endBeforeHalf": 1
+            },
+            {
+                "item": "Workshop Slide Deck",
+                "startDay": 2, 
+                "startInHalf": 1, 
+                "endDay": 4, 
+                "endBeforeHalf": 2
+            },
+            {
+                "item": "Figma",
+                "startDay": 4, 
+                "startInHalf": 1, 
+                "endDay": 7, 
+                "endBeforeHalf": 1
+            },
+            {
+                "item": "Something Else",
+                "startDay": 5, 
+                "startInHalf": 1, 
+                "endDay": 7, 
+                "endBeforeHalf": 3
+            }
+        ],
+        "slideDeckLink": "https://docs.google.com/presentation/d/1CbY3OSKcWMfvrco0U_Z6pnmxEtvNUaZF/edit?usp=drive_link&ouid=111649398785307597923&rtpof=true&sd=true",
+        "recordingLink": "",
+        "lessons": [
+            {
+                "title": "Flexbox",
+                "description": "Learn how to use flexbox!",
+                "resources": [
+                    {
+                        "name": "cheat sheet",
+                        "link": "https://www.google.com"
+                    },
+                    {
+                        "name": "interactive guide",
+                        "link": "https://www.google.com"
+                    }
+                ],
+                "demoComponentName": "Demo1"
+            },
+            {
+                "title": "Position",
+                "description": "Learn how to use positioning!",
+                "resources": [
+                    {
+                        "name": "cheat sheet",
+                        "link": "https://www.google.com"
+                    },
+                    {
+                        "name": "interactive guide",
+                        "link": "https://www.google.com"
+                    }
+                ],
+                "demoComponentName": "Demo1"
+            }    
+        ],
+        "defaultCode": {
+            "/App.js": {
+                "code": "import './styles.css';\n\nexport default function App() {\n\treturn (\n\t\t<div className=\"mainContainer\">\n\t\t\t<h1>Hello, cohort members!</h1>\n\t\t\t<p>Try editing the styles!</p>\n\t\t</div>\n\t);\n}"
+            },
+            "/styles.css": {
+                "code": "/* Add styles below */\n.mainContainer {\n\ttext-align: center;\n\tpadding: 20px;\n}\n\n.mainContainer h1 {\n\tcolor: #3C257E;\n}\n\n.mainContainer p {\n\tcolor: #000;\n}"
+            }
+        },
+        "additionalResources": [
+            {
+                "title": "Figma",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "CSS Selector Game",
+                "type": "Website", 
+                "image": "/images/filler.jpeg", 
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "Installing Git",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "CSS Cheat Sheet",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "HTML Semantics",
+                "type": "Website", 
+                "image": "",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "HTML File Setup",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            }
+        ]
+    },
+    {
+        "title": "Intro to HTML and CSS",
+        "description": "Learn the basics of HTML & CSS including different techniques and methods.",
+        "agenda": [
+            "Box Model",
+            "Flexbox",
+            "Responsiveness",
+            "Media Queries",
+            "Positioning"
+        ],
+        "assignment": {
+            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then create a “Skills” section. Create a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
+            "tags": ["flexbox", "html", "media queries"],
+            "deadline": "10.18.2024"
+        },
+        "timeline": [
+            {
+                "item": "Front-End Video",
+                "startDay": 1, 
+                "startInHalf": 1, 
+                "endDay": 3, 
+                "endBeforeHalf": 1
+            },
+            {
+                "item": "Workshop Slide Deck",
+                "startDay": 2, 
+                "startInHalf": 1, 
+                "endDay": 4, 
+                "endBeforeHalf": 2
+            },
+            {
+                "item": "Figma",
+                "startDay": 4, 
+                "startInHalf": 1, 
+                "endDay": 7, 
+                "endBeforeHalf": 1
+            },
+            {
+                "item": "Something Else",
+                "startDay": 5, 
+                "startInHalf": 1, 
+                "endDay": 7, 
+                "endBeforeHalf": 3
+            }
+        ],
+        "slideDeckLink": "https://docs.google.com/presentation/d/19xRDWqRobKuQZbGXVShH4oshbxYSzu-H/edit?usp=drive_link&ouid=111649398785307597923&rtpof=true&sd=true",
+        "recordingLink": "",
+        "lessons": [
+            {
+                "title": "Flexbox",
+                "description": "Learn how to use flexbox!",
+                "resources": [
+                    {
+                        "name": "cheat sheet",
+                        "link": "https://www.google.com"
+                    },
+                    {
+                        "name": "interactive guide",
+                        "link": "https://www.google.com"
+                    }
+                ],
+                "demoComponentName": "Demo1"
+            },
+            {
+                "title": "Position",
+                "description": "Learn how to use positioning!",
+                "resources": [
+                    {
+                        "name": "cheat sheet",
+                        "link": "https://www.google.com"
+                    },
+                    {
+                        "name": "interactive guide",
+                        "link": "https://www.google.com"
+                    }
+                ],
+                "demoComponentName": "Demo1"
+            }    
+        ],
+        "defaultCode": {
+            "/App.js": {
+                "code": "import './styles.css';\n\nexport default function App() {\n\treturn (\n\t\t<div className=\"mainContainer\">\n\t\t\t<h1>Hello, cohort members!</h1>\n\t\t\t<p>Try editing the styles!</p>\n\t\t</div>\n\t);\n}"
+            },
+            "/styles.css": {
+                "code": "/* Add styles below */\n.mainContainer {\n\ttext-align: center;\n\tpadding: 20px;\n}\n\n.mainContainer h1 {\n\tcolor: #3C257E;\n}\n\n.mainContainer p {\n\tcolor: #000;\n}"
+            }
+        },
+        "additionalResources": [
+            {
+                "title": "Figma",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "CSS Selector Game",
+                "type": "Website", 
+                "image": "/images/filler.jpeg", 
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "Installing Git",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "CSS Cheat Sheet",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "HTML Semantics",
+                "type": "Website", 
+                "image": "",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "HTML File Setup",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            }
+        ]
+    },
+    {
+        "title": "JavaScript",
+        "description": "Learn about JavaScript and how it works with HTML and CSS.",
+        "agenda": [
+            "Syntax and Key Features",
+            "Arrow Functions",
+            "Modularity",
+            "JSON"
+        ],
+        "assignment": {
+            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then create a “Skills” section. Create a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
+            "tags": ["flexbox", "html", "media queries"],
+            "deadline": "10.18.2024"
+        },
+        "timeline": [
+            {
+                "item": "Front-End Video",
+                "startDay": 1, 
+                "startInHalf": 1, 
+                "endDay": 3, 
+                "endBeforeHalf": 1
+            },
+            {
+                "item": "Workshop Slide Deck",
+                "startDay": 2, 
+                "startInHalf": 1, 
+                "endDay": 4, 
+                "endBeforeHalf": 2
+            },
+            {
+                "item": "Figma",
+                "startDay": 4, 
+                "startInHalf": 1, 
+                "endDay": 7, 
+                "endBeforeHalf": 1
+            },
+            {
+                "item": "Something Else",
+                "startDay": 5, 
+                "startInHalf": 1, 
+                "endDay": 7, 
+                "endBeforeHalf": 3
+            }
+        ],
+        "slideDeckLink": "https://docs.google.com/presentation/d/1jSSyIqFIDO1FMGBPZh7PpAjNFlz6BXAf/edit?usp=drive_link&ouid=111649398785307597923&rtpof=true&sd=true",
+        "recordingLink": "",
+        "lessons": [
+            {
+                "title": "Flexbox",
+                "description": "Learn how to use flexbox!",
+                "resources": [
+                    {
+                        "name": "cheat sheet",
+                        "link": "https://www.google.com"
+                    },
+                    {
+                        "name": "interactive guide",
+                        "link": "https://www.google.com"
+                    }
+                ],
+                "demoComponentName": "Demo1"
+            },
+            {
+                "title": "Position",
+                "description": "Learn how to use positioning!",
+                "resources": [
+                    {
+                        "name": "cheat sheet",
+                        "link": "https://www.google.com"
+                    },
+                    {
+                        "name": "interactive guide",
+                        "link": "https://www.google.com"
+                    }
+                ],
+                "demoComponentName": "Demo1"
+            }    
+        ],
+        "defaultCode": {
+            "/App.js": {
+                "code": "import './styles.css';\n\nexport default function App() {\n\treturn (\n\t\t<div className=\"mainContainer\">\n\t\t\t<h1>Hello, cohort members!</h1>\n\t\t\t<p>Try editing the styles!</p>\n\t\t</div>\n\t);\n}"
+            },
+            "/styles.css": {
+                "code": "/* Add styles below */\n.mainContainer {\n\ttext-align: center;\n\tpadding: 20px;\n}\n\n.mainContainer h1 {\n\tcolor: #3C257E;\n}\n\n.mainContainer p {\n\tcolor: #000;\n}"
+            }
+        },
+        "additionalResources": [
+            {
+                "title": "Figma",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "CSS Selector Game",
+                "type": "Website", 
+                "image": "/images/filler.jpeg", 
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "Installing Git",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "CSS Cheat Sheet",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "HTML Semantics",
+                "type": "Website", 
+                "image": "",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "HTML File Setup",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            }
+        ]
+    },
+    {
+        "title": "React.js and Next.js",
+        "description": "Learn about developing with JavaScript frameworks.",
+        "agenda": [
+            "Components",
+            "Hooks",
+            "Creating and Maintaining State",
+            "Props"
+        ],
+        "assignment": {
+            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then create a “Skills” section. Create a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
+            "tags": ["flexbox", "html", "media queries"],
+            "deadline": "10.18.2024"
+        },
+        "timeline": [
+            {
+                "item": "Front-End Video",
+                "startDay": 1, 
+                "startInHalf": 1, 
+                "endDay": 3, 
+                "endBeforeHalf": 1
+            },
+            {
+                "item": "Workshop Slide Deck",
+                "startDay": 2, 
+                "startInHalf": 1, 
+                "endDay": 4, 
+                "endBeforeHalf": 2
+            },
+            {
+                "item": "Figma",
+                "startDay": 4, 
+                "startInHalf": 1, 
+                "endDay": 7, 
+                "endBeforeHalf": 1
+            },
+            {
+                "item": "Something Else",
+                "startDay": 5, 
+                "startInHalf": 1, 
+                "endDay": 7, 
+                "endBeforeHalf": 3
+            }
+        ],
+        "slideDeckLink": "https://docs.google.com/presentation/d/1XGLVLjPviWl0_coQd-nwUSJVXMViUiii/edit?usp=drive_link&ouid=111649398785307597923&rtpof=true&sd=true",
+        "recordingLink": "",
+        "lessons": [
+            {
+                "title": "Flexbox",
+                "description": "Learn how to use flexbox!",
+                "resources": [
+                    {
+                        "name": "cheat sheet",
+                        "link": "https://www.google.com"
+                    },
+                    {
+                        "name": "interactive guide",
+                        "link": "https://www.google.com"
+                    }
+                ],
+                "demoComponentName": "Demo1"
+            },
+            {
+                "title": "Position",
+                "description": "Learn how to use positioning!",
+                "resources": [
+                    {
+                        "name": "cheat sheet",
+                        "link": "https://www.google.com"
+                    },
+                    {
+                        "name": "interactive guide",
+                        "link": "https://www.google.com"
+                    }
+                ],
+                "demoComponentName": "Demo1"
+            }    
+        ],
+        "defaultCode": {
+            "/App.js": {
+                "code": "import './styles.css';\n\nexport default function App() {\n\treturn (\n\t\t<div className=\"mainContainer\">\n\t\t\t<h1>Hello, cohort members!</h1>\n\t\t\t<p>Try editing the styles!</p>\n\t\t</div>\n\t);\n}"
+            },
+            "/styles.css": {
+                "code": "/* Add styles below */\n.mainContainer {\n\ttext-align: center;\n\tpadding: 20px;\n}\n\n.mainContainer h1 {\n\tcolor: #3C257E;\n}\n\n.mainContainer p {\n\tcolor: #000;\n}"
+            }
+        },
+        "additionalResources": [
+            {
+                "title": "Figma",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "CSS Selector Game",
+                "type": "Website", 
+                "image": "/images/filler.jpeg", 
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "Installing Git",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "CSS Cheat Sheet",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "HTML Semantics",
+                "type": "Website", 
+                "image": "",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "HTML File Setup",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            }
+        ]
+    },
+    {
+        "title": "Backend Development",
+        "description": "Understand the fundamentals of backend development and APIs.",
+        "agenda": [
+            "APIs",
+            "REST Conventions",
+            "Asynchronous Programming",
+            "Error Handling"
+        ],
+        "assignment": {
+            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then create a “Skills” section. Create a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
+            "tags": ["flexbox", "html", "media queries"],
+            "deadline": "10.18.2024"
+        },
+        "timeline": [
+            {
+                "item": "Front-End Video",
+                "startDay": 1, 
+                "startInHalf": 1, 
+                "endDay": 3, 
+                "endBeforeHalf": 1
+            },
+            {
+                "item": "Workshop Slide Deck",
+                "startDay": 2, 
+                "startInHalf": 1, 
+                "endDay": 4, 
+                "endBeforeHalf": 2
+            },
+            {
+                "item": "Figma",
+                "startDay": 4, 
+                "startInHalf": 1, 
+                "endDay": 7, 
+                "endBeforeHalf": 1
+            },
+            {
+                "item": "Something Else",
+                "startDay": 5, 
+                "startInHalf": 1, 
+                "endDay": 7, 
+                "endBeforeHalf": 3
+            }
+        ],
+        "slideDeckLink": "https://docs.google.com/presentation/d/19tEFAlTfua39di5_R3Y5QHGHv_Po11xZ/edit?usp=drive_link&ouid=111649398785307597923&rtpof=true&sd=true",
+        "recordingLink": "",
+        "lessons": [
+            {
+                "title": "Flexbox",
+                "description": "Learn how to use flexbox!",
+                "resources": [
+                    {
+                        "name": "cheat sheet",
+                        "link": "https://www.google.com"
+                    },
+                    {
+                        "name": "interactive guide",
+                        "link": "https://www.google.com"
+                    }
+                ],
+                "demoComponentName": "Demo1"
+            },
+            {
+                "title": "Position",
+                "description": "Learn how to use positioning!",
+                "resources": [
+                    {
+                        "name": "cheat sheet",
+                        "link": "https://www.google.com"
+                    },
+                    {
+                        "name": "interactive guide",
+                        "link": "https://www.google.com"
+                    }
+                ],
+                "demoComponentName": "Demo1"
+            }    
+        ],
+        "defaultCode": {
+            "/App.js": {
+                "code": "import './styles.css';\n\nexport default function App() {\n\treturn (\n\t\t<div className=\"mainContainer\">\n\t\t\t<h1>Hello, cohort members!</h1>\n\t\t\t<p>Try editing the styles!</p>\n\t\t</div>\n\t);\n}"
+            },
+            "/styles.css": {
+                "code": "/* Add styles below */\n.mainContainer {\n\ttext-align: center;\n\tpadding: 20px;\n}\n\n.mainContainer h1 {\n\tcolor: #3C257E;\n}\n\n.mainContainer p {\n\tcolor: #000;\n}"
+            }
+        },
+        "additionalResources": [
+            {
+                "title": "Figma",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "CSS Selector Game",
+                "type": "Website", 
+                "image": "/images/filler.jpeg", 
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "Installing Git",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "CSS Cheat Sheet",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "HTML Semantics",
+                "type": "Website", 
+                "image": "",
+                "link": "https://flukeout.github.io/"
+            },
+            {
+                "title": "HTML File Setup",
+                "type": "Website", 
+                "image": "/images/filler.jpeg",
+                "link": "https://flukeout.github.io/"
+            }
+        ]
+    }
+]

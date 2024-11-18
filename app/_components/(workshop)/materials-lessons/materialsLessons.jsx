@@ -1,43 +1,16 @@
 import LinkPreview from '../link-preview/link-preview'
-import Lesson from './lessonCard'
-import styles from './materialsLessons.module.scss'
 import Image from 'next/image'
-import Demo1 from '@/_components/demos/demo1'
 
-const demos = [
-    {
-        title: "Flexbox",
-        description: "Learn how to use flexbox!",
-        resources: [
-            {
-                name: "cheat sheet",
-                link: "https://www.google.com"
-            },
-            {
-                name: "interactive guide",
-                link: "https://www.google.com"
-            }
-        ],
-        demoComponent: <Demo1/>
-    },
-    {
-        title: "Position",
-        description: "Learn how to use positioning!",
-        resources: [
-            {
-                name: "cheat sheet",
-                link: "https://www.google.com"
-            },
-            {
-                name: "interactive guide",
-                link: "https://www.google.com"
-            }
-        ],
-        demoComponent: <Demo1/>
-    }
-]
+import styles from './materialsLessons.module.scss'
 
-export default function Materials({ slideLink, recordingLink }) {
+import Lesson from './lessonCard'
+import Demo1 from '@/_demos/demo1'
+
+const componentMap = {
+    Demo1: <Demo1 />
+}
+
+export default function Materials({ slideDeckLink, recordingLink, lessons }) {
     return (
         <div className={styles.content}>
             <div className={styles.filetab}>
@@ -47,7 +20,7 @@ export default function Materials({ slideLink, recordingLink }) {
             <p className={styles.description}>Refer to these workshop materials for this week&apos;s topics. These links will also be a great resource to come back to during the development of the client project!</p>
             <div className={styles.materials}>
                 <div className={styles.link}>
-                    <LinkPreview title="Workshop Slides" link={slideLink} theme="light" />
+                    <LinkPreview title="Workshop Slides" link={slideDeckLink} theme="light" />
                 </div>
                 <div className={styles.link}>
                     <LinkPreview title="Workshop Recording" link={recordingLink} theme="light" />
@@ -56,8 +29,8 @@ export default function Materials({ slideLink, recordingLink }) {
 
             <h1>Lessons</h1>
             <p className={styles.description}>Here are a some helpful demos for important concepts from this week.</p>
-            {demos.map((demo, idx) => 
-                <Lesson key={idx} title={demo.title} description={demo.description} resources={demo.resources} demoComponent={demo.demoComponent} /> 
+            {lessons.map((lesson, idx) => 
+                <Lesson key={idx} title={lesson.title} description={lesson.description} resources={lesson.resources} demoComponent={componentMap[lesson.demoComponentName]} /> 
             )}
         </div>
     )

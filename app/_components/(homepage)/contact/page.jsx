@@ -1,47 +1,8 @@
-import { Individual } from './individual.jsx'
-import styles from './contact.module.scss'
 import Image from 'next/image.js'
+import styles from './contact.module.scss'
+import { Individual } from './individual.jsx'
 
-const data = [
-    {
-        name: "Haylie Tan",
-        image: '/contacts/Haylie.jpg',
-        role: 'Tech Lead',
-        pronouns: 'she/her',
-        phone: '(510)358-1578',
-        email: 'haytan@ucdavis.edu',
-        linkedin: 'haylie'
-    },
-    {
-        name: "Haylie Tan",
-        image: '/contacts/Michelle.jpg',
-        role: 'Tech Lead',
-        pronouns: 'she/her',
-        phone: '(510)358-1578',
-        email: 'haytan@ucdavis.edu',
-        linkedin: 'haylie'
-    },
-    {
-        name: "Haylie Tan",
-        image: '/contacts/Naomi.jpg',
-        role: 'Tech Lead',
-        pronouns: 'she/her',
-        phone: '(510)358-1578',
-        email: 'haytan@ucdavis.edu',
-        linkedin: 'haylie'
-    },
-    {
-        name: "Haylie Tan",
-        image: '/contacts/Cristian.jpg',
-        role: 'Tech Lead',
-        pronouns: 'she/her',
-        phone: '(510)358-1578',
-        email: 'haytan@ucdavis.edu',
-        linkedin: 'haylie'
-    }
-]
-
-export default function Contact(){
+export default function Contact({ data }){
     return(
         <div className={styles.container}  id="contact">
             <div className={styles.filetab}>

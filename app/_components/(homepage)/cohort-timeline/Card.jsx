@@ -23,7 +23,7 @@ const bullet = (
 );
 
 // Every Card is connected to a bullet with a line going through it
-export default function Card( {title, text, agenda, number} ) {
+export default function Card( {title, description, agenda, number} ) {
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -56,7 +56,7 @@ export default function Card( {title, text, agenda, number} ) {
           {/* This has the title and description together in the same div*/}
           <div className={styles.workshop_description}>
             <p className={styles.title}>{title}</p>
-            <p>{text}</p>
+            <p>{description}</p>
           </div>
 
           <ul className={styles.agenda}>
