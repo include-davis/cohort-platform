@@ -1,0 +1,91 @@
+@use '@/mixins.scss';
+
+// Page styles
+.content {
+    display: flex;
+    justify-content: space-between;
+
+    background: var(--include-gradient);
+    color: var(--text-light);
+    padding: calc(8px * 16) var(--edge-spacing);
+    padding-top: calc(8px * 12 + var(--edge-spacing));
+    
+    @include mixins.sm-desktop {
+        // padding: calc(8px * 16) calc(8px * 10);
+        padding-top: calc(8px * 10 + var(--edge-spacing));
+    }
+    
+    @include mixins.tablet {
+        // padding: calc(8px * 16) calc(8px * 8);
+        padding-top: calc(8px * 8 + var(--edge-spacing));
+    } 
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    position: sticky;
+    top: calc(8px * 15);
+
+    max-height: calc(8px * 16);
+    max-width: calc(8px * 47);
+
+    @include mixins.sm-desktop {
+        max-height: calc(8px * 14);
+        max-width: calc(8px * 43);
+    }
+
+    @include mixins.tablet {
+        max-height: calc(8px * 13);
+        max-width: calc(8px * 38);
+    }
+}
+
+.header {
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    @include mixins.sm-desktop {
+        font-size: 2.0rem;
+    }
+
+    @include mixins.tablet {
+        font-size: 1.7rem;
+    }
+    
+}
+
+.text {
+    font-size: 1rem;
+    font-weight: 300;
+
+    @include mixins.sm-desktop {
+        font-size: .9rem;
+    }
+
+    @include mixins.tablet {
+        font-size: .8rem;
+    }
+    
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 55%;
+
+    @include mixins.tablet {
+        max-width: 50%;
+    } 
+}
+
+.workshops {
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-spacing);
+
+    max-width: 90%;
+}

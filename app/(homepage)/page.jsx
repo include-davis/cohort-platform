@@ -1,12 +1,17 @@
 import styles from "./homepage.module.scss";
-import TryItOut from "../_components/try-it-out/try-it-out";
-import { defaultCode } from "../_components/try-it-out/default-code";
+
+import Welcome from "../_components/welcome/welcome";
+import Timeline from "@/_components/(homepage)/cohort-timeline/cohort-timeline";
+import Contact from "../_components/(homepage)/contact/page";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      Howdy
-      <TryItOut defaultCode={defaultCode} />
+    <>
+      <div className={styles.page}>
+          <Welcome/>
+          <Timeline/>
+          <Contact/>
     </div>
+    </>
   );
 }

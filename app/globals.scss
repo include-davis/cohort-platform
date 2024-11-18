@@ -1,3 +1,5 @@
+@use "./mixins.scss";
+
 :root {
   --include-purple: #3C257E;
   --include-purple-light: #5a4b85;
@@ -11,10 +13,21 @@
   --text-midtone: #414141;
   --text-light: #FFF;
 
-  --edge-spacing: 200px;
+  --edge-spacing: 100px;
+  --card-spacing: calc(8px * 10);
   --folder-tab-width: 1076px;
+  --folder-tab-height: 100px;
+  --folder-tab-cutout-width: 50px;
+  --tab-height: 64px;
+  --skew-angle: -20deg;
 
   --include-gradient: linear-gradient(90deg, #332950, #3C257E, #322D41);
+
+  scroll-behavior: smooth;
+
+  @include mixins.tablet {
+    --edge-spacing: 64px;
+  }
 }
 
 * {
@@ -26,4 +39,11 @@
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 3.25rem;
+  line-height: 3.625rem;
+  color: var(--text-midtone);
 }

@@ -1,0 +1,17 @@
+.big_box {
+    width: 100%;
+    aspect-ratio: 1.5;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+
+    background-color: rosybrown;
+}
+
+.tiny_box {
+    width: 20%;
+    aspect-ratio: 1;
+    background-color: aqua;
+}

@@ -1,0 +1,177 @@
+@use '@/mixins.scss';
+
+.card {
+    // Height will change based on screen size mixins in the future
+    --card-height-closed: calc(8px * 21);
+
+    color: var(--text-midtone);
+    position: relative;
+    border-radius: 20px;
+
+    @include mixins.tablet {
+        --card-height-closed: calc(8px * 18);
+    }
+}
+
+.card_front {
+    width: 90%;
+    height: 100%;
+    
+    background-color: var(--foreground-light);
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden; // important to hide the text and agenda infor behind
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    transform: translate(-50%, -50%); // Translates from top left corner placement to center
+    left: 90%;
+    top: 50%;
+    z-index: 1;
+
+    background-color: var(--foreground-light);
+    border-radius: 50%;
+    border: 1px solid var(--include-purple-light);
+
+    height: 50px;
+    width: 50px;
+}
+
+.line_none {
+    display: none;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    padding: 24px;
+}
+
+.workshop_description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+
+    @include mixins.tablet {
+        font-size: 1.6rem
+    } 
+}
+
+.agenda {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.agenda_item {
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px 1px #00000026;
+}
+
+.link_div {
+    position: sticky;
+    bottom: 0px;
+    padding: 32px 0px;
+    padding-left: 24px;
+
+    background-color: var(--foreground-light);
+
+    @include mixins.tablet {
+        padding: 24px 0px;
+        padding-left: 24px;
+    }
+}
+
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 8px;
+    border-radius: 10px;
+    width: 200px;
+    
+    background-color: var(--include-purple);
+    color: var(--text-light);
+
+    @include mixins.tablet {
+        width: 170px;
+    } 
+}
+
+// Scroll line styles adapted and modified from include 2023 website code: 
+// https://github.com/include-davis/website-2023/blob/main/src/pages/services.tsx
+.line_open {
+    width: 2px;
+    height: 100%;
+
+    background-color: var(--foreground-light);
+    transition: height 0.5s ease
+}
+
+.line_closed {
+    width: 2px;
+    height: 100%;
+
+    background-color: var(--foreground-light);
+    transition: height 0.5s ease
+}
+
+.line_top {
+    height: calc(50% + var(--card-spacing) / 2);
+
+    position: absolute;
+    top: calc(var(--card-spacing) / 2 * -1 - 1px);
+    right: -48px;
+}
+
+.line_bottom {
+    height: calc(50% + var(--card-spacing) / 2);
+
+    position: absolute;
+    bottom: calc(var(--card-spacing) / 2 * -1 - 1px);
+    right: -48px;
+}
+
+.bullet {
+    position: absolute;
+    right: -95px; // Wanted multiple of 8 but 95 centers it on the line
+    top: 50%;
+    transform: translate(-50%, -50%); // Translates from top left corner to center
+}
+
+.innerCircle {
+    width: 24px;
+    height: 24px;
+
+    border-radius: 100%;
+    background: var(--foreground-light);
+}
+
+.outerCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 48px;
+    height: 48px;
+    
+    border: 2px solid var(--foreground-light);
+    border-radius: 100%;
+    box-shadow: 0px 0px 75px 0px rgba(60, 37, 126, 0.60);
+}
