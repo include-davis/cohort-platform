@@ -6,12 +6,10 @@ import Contact from "../_components/(homepage)/contact/page";
 
 export default function Home() {
   return (
-    <>
-      <div className={styles.page}>
-          <Welcome/>
-          <Timeline/>
-          <Contact/>
+    <div className={styles.page}>
+        <Welcome/>
+        <Timeline/>
+        <Contact/>
     </div>
-    </>
   );
 }

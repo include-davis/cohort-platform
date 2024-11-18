@@ -9,6 +9,7 @@ import WeeklyTimeline from "@/_components/(workshop)/weekly-timeline/weekly-time
 import Materials from "@/_components/(workshop)/materials-lessons/materialsLessons"
 import TryItOut from "@/_components/(workshop)/try-it-out/try-it-out";
 import { defaultCode } from "@/_components/(workshop)/try-it-out/default-code";
+import AdditionalResources from "@/_components/(workshop)/additional-resources/additional-resources";
 
 const workshopData = [
     {
@@ -54,6 +55,7 @@ export default function Workshop({ params }){
             <WeeklyTimeline week={num+1}/>
             <Materials slideLink={workshopData[num].slideLink} recordingLink={workshopData[num].recordingLink} />
             <TryItOut defaultCode={defaultCode} />
+            <AdditionalResources />
         </div>
     )
 }
