@@ -1,0 +1,69 @@
+.container {
+    border-radius: 16px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.visible_section {
+    background: var(--include-gradient);
+    
+    color: var(--text-light);
+    font-weight: bold;
+    padding: 24px 72px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}    
+
+.arrow {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: inherit;
+}
+
+.arrow:active {
+    transition: transform 0.3s;
+    transform: rotate(180deg);  
+}    
+
+.collapsible_section {
+    display: none;
+
+    background-color: var(--foreground-light);
+    box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.05);
+
+    padding: 48px 72px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes drop {
+    0% {
+      transform: translateY(-24px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.collapsible_section.active {
+    animation: .2s drop;
+}
+
+.content_text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    
+    a {
+        color: var(--include-purple);
+    }
+}
+
+.content_visuals {
+    width: 50%;
+}

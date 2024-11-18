@@ -6,7 +6,7 @@ import WorkshopWelcome from "@/_components/welcome/workshopWelcome"
 import WorkshopNav from "@/_components/(workshop)/workshop-navigation/workshopNav"
 import AssignmentBrief from "@/_components/(workshop)/assignment-brief/assignment-brief"
 import WeeklyTimeline from "@/_components/(workshop)/weekly-timeline/weekly-timeline"
-import Materials from "@/_components/(workshop)/materials-lessons/materials"
+import Materials from "@/_components/(workshop)/materials-lessons/materialsLessons"
 
 const workshopData = [
     {
