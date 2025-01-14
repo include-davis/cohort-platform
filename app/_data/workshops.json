@@ -5,12 +5,13 @@
         "agenda": [
             "How The Internet Works",
             "Workspace Setup",
-            "Overview of Web Development"
+            "Web Development",
+            "Intro to Git"
         ],
         "assignment": {
             "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then create a “Skills” section. Create a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
             "tags": ["flexbox", "html", "media queries"],
-            "deadline": "10.18.2024"
+            "deadline": "2.3.2025"
         },
         "timeline": [
             {

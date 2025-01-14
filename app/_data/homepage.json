@@ -2,35 +2,32 @@
     "current_week": 1,
     "links": {
         "training_repo": "https://github.com/include-davis/tech-fw-2024",
-        "slack_invite": "https://join.slack.com/t/2nclude-at-davis/shared_invite/zt-2ugw1anrb-T35J5ehvjXVV1aBj6KeSuA"
+        "slack_invite": "https://join.slack.com/t/2nclude-at-davis/shared_invite/zt-2xs9er08y-3McmYoNfdmagZ8dWY5T3Yw"
     },
     "contacts": [
         {
-            "name": "Haylie Tan",
+            "name": "Sreya Mathew",
             "image": "/contacts/Haylie.jpg",
             "role": "Tech Lead",
             "pronouns": "she/her",
-            "phone": "(510)358-1578",
-            "email": "haytan@ucdavis.edu",
-            "linkedin": "haylie"
+            "phone": "(209)879-2625",
+            "email": "ssmathew@ucdavis.edu"
         },
         {
-            "name": "Haylie Tan",
+            "name": "Nandhana Selvam",
             "image": "/contacts/Michelle.jpg",
             "role": "Tech Lead",
             "pronouns": "she/her",
-            "phone": "(510)358-1578",
-            "email": "haytan@ucdavis.edu",
-            "linkedin": "haylie"
+            "phone": "(925)503-9432",
+            "email": "nselvam@ucdavis.edu"
         },
         {
-            "name": "Haylie Tan",
+            "name": "Sruti Elangovan",
             "image": "/contacts/Naomi.jpg",
             "role": "Tech Lead",
             "pronouns": "she/her",
-            "phone": "(510)358-1578",
-            "email": "haytan@ucdavis.edu",
-            "linkedin": "haylie"
+            "phone": "(650)686-7315",
+            "email": "selangovan@ucdavis.edu"
         },
         {
             "name": "Haylie Tan",
@@ -38,8 +35,7 @@
             "role": "Tech Lead",
             "pronouns": "she/her",
             "phone": "(510)358-1578",
-            "email": "haytan@ucdavis.edu",
-            "linkedin": "haylie"
+            "email": "haytan@ucdavis.edu"
         }
     ]
 }
