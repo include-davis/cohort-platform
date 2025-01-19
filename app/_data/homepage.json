@@ -2,44 +2,40 @@
     "current_week": 1,
     "links": {
         "training_repo": "https://github.com/include-davis/tech-fw-2024",
-        "slack_invite": "https://join.slack.com/t/2nclude-at-davis/shared_invite/zt-2ugw1anrb-T35J5ehvjXVV1aBj6KeSuA"
+        "slack_invite": "https://join.slack.com/t/2nclude-at-davis/shared_invite/zt-2xs9er08y-3McmYoNfdmagZ8dWY5T3Yw"
     },
     "contacts": [
         {
-            "name": "Haylie Tan",
-            "image": "/contacts/Haylie.jpg",
+            "name": "Sreya Mathew",
+            "image": "/contacts/Sreya.jpg",
             "role": "Tech Lead",
             "pronouns": "she/her",
-            "phone": "(510)358-1578",
-            "email": "haytan@ucdavis.edu",
-            "linkedin": "haylie"
+            "phone": "(209)879-2625",
+            "email": "ssmathew@ucdavis.edu"
         },
         {
-            "name": "Haylie Tan",
-            "image": "/contacts/Michelle.jpg",
+            "name": "Nandhana Selvam",
+            "image": "/contacts/Nandhana.jpg",
             "role": "Tech Lead",
             "pronouns": "she/her",
-            "phone": "(510)358-1578",
-            "email": "haytan@ucdavis.edu",
-            "linkedin": "haylie"
+            "phone": "(925)503-9432",
+            "email": "nselvam@ucdavis.edu"
         },
         {
-            "name": "Haylie Tan",
-            "image": "/contacts/Naomi.jpg",
+            "name": "Sruti Elangovan",
+            "image": "/contacts/Sruti.jpg",
             "role": "Tech Lead",
             "pronouns": "she/her",
-            "phone": "(510)358-1578",
-            "email": "haytan@ucdavis.edu",
-            "linkedin": "haylie"
+            "phone": "(530)756-1606",
+            "email": "selangovan@ucdavis.edu"
         },
         {
-            "name": "Haylie Tan",
-            "image": "/contacts/Cristian.jpg",
+            "name": "Vijit Dua",
+            "image": "/contacts/Vijit.jpg",
             "role": "Tech Lead",
-            "pronouns": "she/her",
-            "phone": "(510)358-1578",
-            "email": "haytan@ucdavis.edu",
-            "linkedin": "haylie"
+            "pronouns": "he/him",
+            "phone": "(530)757-2328",
+            "email": "vijdua@ucdavis.edu"
         }
     ]
 }

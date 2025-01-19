@@ -5,7 +5,7 @@ import { TbMail } from "react-icons/tb";
 import { TbPhone } from "react-icons/tb";
 
 export function Individual({ props }){
-    const { name, image, role, pronouns, phone, email, linkedin } = props
+    const { name, image, role, pronouns, phone, email } = props
 
     return(
         <div className={styles.individual_card}>
@@ -23,7 +23,7 @@ export function Individual({ props }){
             <div className={styles.bottom_card}>
                 <p><TbPhone/>   {phone}</p>
                 <p><TbMail/>    {email}</p>
-                <p><TbBrandLinkedin/>   {linkedin}</p>
+                {/* <p><TbBrandLinkedin/>   {linkedin}</p> */}
             </div>
         </div>
     );
