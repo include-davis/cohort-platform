@@ -7,7 +7,7 @@
     "contacts": [
         {
             "name": "Sreya Mathew",
-            "image": "/contacts/Haylie.jpg",
+            "image": "/contacts/Sreya.jpg",
             "role": "Tech Lead",
             "pronouns": "she/her",
             "phone": "(209)879-2625",
@@ -15,7 +15,7 @@
         },
         {
             "name": "Nandhana Selvam",
-            "image": "/contacts/Michelle.jpg",
+            "image": "/contacts/Nandhana.jpg",
             "role": "Tech Lead",
             "pronouns": "she/her",
             "phone": "(925)503-9432",
@@ -23,19 +23,19 @@
         },
         {
             "name": "Sruti Elangovan",
-            "image": "/contacts/Naomi.jpg",
+            "image": "/contacts/Sruti.jpg",
             "role": "Tech Lead",
             "pronouns": "she/her",
-            "phone": "(650)686-7315",
+            "phone": "(530)756-1606",
             "email": "selangovan@ucdavis.edu"
         },
         {
-            "name": "Haylie Tan",
-            "image": "/contacts/Cristian.jpg",
+            "name": "Vijit Dua",
+            "image": "/contacts/Vijit.jpg",
             "role": "Tech Lead",
-            "pronouns": "she/her",
-            "phone": "(510)358-1578",
-            "email": "haytan@ucdavis.edu"
+            "pronouns": "he/him",
+            "phone": "(530)757-2328",
+            "email": "vijdua@ucdavis.edu"
         }
     ]
 }
