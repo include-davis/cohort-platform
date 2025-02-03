@@ -87,10 +87,10 @@
         },
         "additionalResources": [
             {
-                "title": "Figma",
+                "title": "Example Portfolio Design",
                 "type": "Website", 
                 "image": "/images/filler.jpeg",
-                "link": "https://flukeout.github.io/"
+                "link": "https://www.figma.com/proto/6KUxXdMClJrDtCZjqhqfVx/Personal-Portfolio-Design?node-id=1-23"
             },
             {
                 "title": "CSS Selector Game",
@@ -102,25 +102,19 @@
                 "title": "Installing Git",
                 "type": "Website", 
                 "image": "/images/filler.jpeg",
-                "link": "https://flukeout.github.io/"
+                "link": "https://github.com/git-guides/install-git"
             },
             {
                 "title": "CSS Cheat Sheet",
                 "type": "Website", 
                 "image": "/images/filler.jpeg",
-                "link": "https://flukeout.github.io/"
+                "link": "https://adam-marsden.co.uk/css-cheat-sheet"
             },
             {
-                "title": "HTML Semantics",
-                "type": "Website", 
-                "image": "",
-                "link": "https://flukeout.github.io/"
-            },
-            {
-                "title": "HTML File Setup",
+                "title": "HTML Elements",
                 "type": "Website", 
                 "image": "/images/filler.jpeg",
-                "link": "https://flukeout.github.io/"
+                "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element#document_metadata"
             }
         ]
     },
