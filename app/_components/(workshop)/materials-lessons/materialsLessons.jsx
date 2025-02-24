@@ -5,9 +5,11 @@ import styles from './materialsLessons.module.scss'
 
 import Lesson from './lessonCard'
 import Demo1 from '@/_demos/demo1'
+import Inspect from '@/_demos/inspect'
 
 const componentMap = {
-    Demo1: <Demo1 />
+    Demo1: <Demo1 />,
+    Inspect: <Inspect />
 }
 
 export default function Materials({ slideDeckLink, recordingLink, lessons }) {
