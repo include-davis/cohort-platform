@@ -9,9 +9,9 @@
             "Intro to Git"
         ],
         "assignment": {
-            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then create a “Skills” section. Create a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
-            "tags": ["flexbox", "html", "media queries"],
-            "deadline": "2.3.2025"
+            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then, add additional elements, such as an image or a “Skills” section with a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
+            "tags": ["flexbox", "html"],
+            "deadline": "2.24.2025"
         },
         "timeline": [
             {
@@ -29,7 +29,7 @@
                 "endBeforeHalf": 2
             },
             {
-                "item": "Figma",
+                "item": "Figma for Assigment 1",
                 "startDay": 4, 
                 "startInHalf": 1, 
                 "endDay": 7, 
@@ -43,39 +43,15 @@
                 "endBeforeHalf": 3
             }
         ],
-        "slideDeckLink": "https://docs.google.com/presentation/d/1ewQZ1HhVQ1b20G3XeMrt6rBJtL67yPqk7xNFqaYBb-I/edit?usp=sharing",
-        "recordingLink": "",
+        "slideDeckLink": "https://docs.google.com/presentation/d/1Xbkw9om4aPU-0zZlmqbti8Ek57wd3XMNWiX-ti0GldI/edit?usp=sharing",
+        "recordingLink": "https://ucdavis.zoom.us/rec/share/eI6kS0X1nnN-Ck2MsbGnHwCqqkdvRRjCxVTqSSCu23gXy_G97-cIu-Z8hYICYeu-.BVv7C1gRnEgt554W",
         "lessons": [
             {
-                "title": "Flexbox",
-                "description": "Learn how to use flexbox!",
-                "resources": [
-                    {
-                        "name": "cheat sheet",
-                        "link": "https://www.google.com"
-                    },
-                    {
-                        "name": "interactive guide",
-                        "link": "https://www.google.com"
-                    }
-                ],
-                "demoComponentName": "Demo1"
-            },
-            {
-                "title": "Position",
-                "description": "Learn how to use positioning!",
-                "resources": [
-                    {
-                        "name": "cheat sheet",
-                        "link": "https://www.google.com"
-                    },
-                    {
-                        "name": "interactive guide",
-                        "link": "https://www.google.com"
-                    }
-                ],
-                "demoComponentName": "Demo1"
-            }    
+                "title": "Chrome Developer Tools",
+                "description": "Try using the inspect tool to check out the component to the right- How are elements nested? What tags are used? Check out the css styles!",
+                "resources": [],
+                "demoComponentName": "Inspect"
+            } 
         ],
         "defaultCode": {
             "/App.js": {
@@ -129,18 +105,11 @@
             "Positioning"
         ],
         "assignment": {
-            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then create a “Skills” section. Create a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
-            "tags": ["flexbox", "html", "media queries"],
-            "deadline": "10.18.2024"
+            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then, add additional elements, such as an image or a “Skills” section with a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
+            "tags": ["flexbox", "html"],
+            "deadline": "2.24.2025"
         },
         "timeline": [
-            {
-                "item": "Front-End Video",
-                "startDay": 1, 
-                "startInHalf": 1, 
-                "endDay": 3, 
-                "endBeforeHalf": 1
-            },
             {
                 "item": "Workshop Slide Deck",
                 "startDay": 2, 
@@ -149,22 +118,22 @@
                 "endBeforeHalf": 2
             },
             {
-                "item": "Figma",
+                "item": "Additional Resources",
                 "startDay": 4, 
                 "startInHalf": 1, 
                 "endDay": 7, 
                 "endBeforeHalf": 1
             },
             {
-                "item": "Something Else",
+                "item": "Assignment 1",
                 "startDay": 5, 
                 "startInHalf": 1, 
                 "endDay": 7, 
                 "endBeforeHalf": 3
             }
         ],
-        "slideDeckLink": "https://docs.google.com/presentation/d/19xRDWqRobKuQZbGXVShH4oshbxYSzu-H/edit?usp=drive_link&ouid=111649398785307597923&rtpof=true&sd=true",
-        "recordingLink": "",
+        "slideDeckLink": "https://docs.google.com/presentation/d/1PJDpJ_-nHqBZitoPJOKbV1Ercueo6kMY/edit?usp=sharing&ouid=104829516095066094781&rtpof=true&sd=true",
+        "recordingLink": "https://ucdavis.zoom.us/rec/share/OjUMW-UXHIS_8N-tvga9hMhlYLTMzpeuka2WAyVM8EUmceotXOSLVNHw9FT-Fgp4.KIjWZXvksKg3Ndro?startTime=1740092702000",
         "lessons": [
             {
                 "title": "Flexbox",
@@ -172,11 +141,15 @@
                 "resources": [
                     {
                         "name": "cheat sheet",
-                        "link": "https://www.google.com"
+                        "link": "https://flexboxsheet.com/"
                     },
                     {
-                        "name": "interactive guide",
-                        "link": "https://www.google.com"
+                        "name": "basic guide",
+                        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox"
+                    },
+                    {
+                        "name": "interactive environment",
+                        "link": "https://flexboxlabs.netlify.app/"
                     }
                 ],
                 "demoComponentName": "Demo1"
@@ -187,11 +160,11 @@
                 "resources": [
                     {
                         "name": "cheat sheet",
-                        "link": "https://www.google.com"
+                        "link": "https://www.w3schools.com/css/css_positioning.asp"
                     },
                     {
-                        "name": "interactive guide",
-                        "link": "https://www.google.com"
+                        "name": "full guide",
+                        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/position"
                     }
                 ],
                 "demoComponentName": "Demo1"
@@ -207,40 +180,88 @@
         },
         "additionalResources": [
             {
-                "title": "Figma",
+                "title": "HTML Tags",
                 "type": "Website", 
                 "image": "/images/filler.jpeg",
-                "link": "https://flukeout.github.io/"
+                "link": "https://www.semrush.com/blog/html-tags-list/"
             },
             {
-                "title": "CSS Selector Game",
+                "title": "HTML Attributes",
                 "type": "Website", 
                 "image": "/images/filler.jpeg", 
-                "link": "https://flukeout.github.io/"
+                "link": "https://www.w3schools.com/tags/ref_attributes.asp"
             },
             {
-                "title": "Installing Git",
+                "title": "CSS Units",
                 "type": "Website", 
                 "image": "/images/filler.jpeg",
-                "link": "https://flukeout.github.io/"
+                "link": "https://www.freecodecamp.org/news/css-unit-guide/"
             },
             {
-                "title": "CSS Cheat Sheet",
+                "title": "More CSS Units",
                 "type": "Website", 
                 "image": "/images/filler.jpeg",
-                "link": "https://flukeout.github.io/"
+                "link": "https://www.digitalocean.com/community/tutorials/css-css-units-explained"
             },
             {
-                "title": "HTML Semantics",
+                "title": "Box Model Cheat Sheet",
                 "type": "Website", 
                 "image": "",
-                "link": "https://flukeout.github.io/"
+                "link": "https://www.codecademy.com/learn/learn-css/modules/learn-css-box-model/cheatsheet"
             },
             {
-                "title": "HTML File Setup",
+                "title": "Display Property",
                 "type": "Website", 
                 "image": "/images/filler.jpeg",
-                "link": "https://flukeout.github.io/"
+                "link": "https://css-tricks.com/almanac/properties/d/display/"
+            },
+            {
+                "title": "Overflow Property",
+                "type": "Website", 
+                "image": "",
+                "link": "https://blog.hubspot.com/website/css-overflow"
+            },
+            {
+                "title": "PsuedoClasses",
+                "type": "Website", 
+                "image": "",
+                "link": "https://css-tricks.com/pseudo-class-selectors/"
+            },
+            {
+                "title": "Flexbox Cheat Sheet",
+                "type": "Website", 
+                "image": "",
+                "link": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+            },
+            {
+                "title": "Practical Guide to CSS Positioning",
+                "type": "Website", 
+                "image": "",
+                "link": "https://www.digitalocean.com/community/tutorials/css-practical-guide-position-relative-absolute"
+            },
+            {
+                "title": "Positioning Real World Example",
+                "type": "Video", 
+                "image": "",
+                "link": "https://www.youtube.com/watch?v=MxEtxo_AaZ4"
+            },
+            {
+                "title": "Media Query Tutorial",
+                "type": "Website", 
+                "image": "",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries"
+            },
+            {
+                "title": "Media Query Explained + Cheat Sheet",
+                "type": "Website", 
+                "image": "",
+                "link": "https://medium.com/@sawanrathod/css3-media-query-cheat-sheet-1fab77ea3cb8"
+            },
+            {
+                "title": "Mastering Responsive Design",
+                "type": "Video", 
+                "image": "",
+                "link": "https://youtu.be/K24lUqcT0Ms?si=WZDUyaX_YNQyY-zr"
             }
         ]
     },
@@ -254,9 +275,9 @@
             "JSON"
         ],
         "assignment": {
-            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then create a “Skills” section. Create a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
-            "tags": ["flexbox", "html", "media queries"],
-            "deadline": "10.18.2024"
+            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then, add additional elements, such as an image or a “Skills” section with a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
+            "tags": ["flexbox", "html"],
+            "deadline": "2.24.2025"
         },
         "timeline": [
             {
@@ -379,9 +400,9 @@
             "Props"
         ],
         "assignment": {
-            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then create a “Skills” section. Create a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
-            "tags": ["flexbox", "html", "media queries"],
-            "deadline": "10.18.2024"
+            "brief": "For your assignment you will need to practice HTML and CSS.\n\nAccess your personal page and create a profile. Introduce yourself by briefly telling us about you. Practice correct HTML semantics. Then, add additional elements, such as an image or a “Skills” section with a list of your skills.\n\nOnce you complete the HTML, starting designing your CSS. Make sure to use the techniques taught in the workshop.",
+            "tags": ["flexbox", "html"],
+            "deadline": "2.24.2025"
         },
         "timeline": [
             {
