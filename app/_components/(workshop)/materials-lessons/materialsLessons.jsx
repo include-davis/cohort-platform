@@ -4,12 +4,16 @@ import Image from 'next/image'
 import styles from './materialsLessons.module.scss'
 
 import Lesson from './lessonCard'
-import Demo1 from '@/_demos/demo1'
-import Inspect from '@/_demos/inspect'
+import FlexDemo from '@/_demos/flex'
+import InspectDemo from '@/_demos/inspect'
+import MapDemo from '@/_demos/map'
+import StateDemo from '@/_demos/state'
 
 const componentMap = {
-    Demo1: <Demo1 />,
-    Inspect: <Inspect />
+    FlexDemo: <FlexDemo />,
+    InspectDemo: <InspectDemo />,
+    MapDemo: <MapDemo />,
+    StateDemo: <StateDemo />,
 }
 
 export default function Materials({ slideDeckLink, recordingLink, lessons }) {
@@ -24,9 +28,9 @@ export default function Materials({ slideDeckLink, recordingLink, lessons }) {
                 <div className={styles.link}>
                     <LinkPreview title="Workshop Slides" link={slideDeckLink} theme="light" />
                 </div>
-                <div className={styles.link}>
+                {recordingLink != "" && <div className={styles.link}>
                     <LinkPreview title="Workshop Recording" link={recordingLink} theme="light" />
-                </div>
+                </div>}
             </div>
 
             <h1>Lessons</h1>

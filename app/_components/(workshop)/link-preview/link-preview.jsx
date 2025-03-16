@@ -26,7 +26,7 @@ export default function LinkPreview({ title, description, link, theme }){
             } catch (error) {
                 console.error("Error fetching link preview:", error)
                 
-                setPreviewImglink("/images/filler.jpeg")
+                setPreviewImglink("/images/filler.png")
                 setLoading(false)
             }
         }
@@ -35,7 +35,7 @@ export default function LinkPreview({ title, description, link, theme }){
     }, [link])
 
     return(
-        <a href={link}>
+        <a href={link} target="_blank">
             <div className={`${theme=="light" ? styles.container_light : styles.container_dark}`}>
                 <p className={`${theme=="light" ? styles.title_light : styles.title_dark}`}>{title}</p>
                 {theme=="dark" &&

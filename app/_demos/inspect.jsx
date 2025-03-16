@@ -3,7 +3,7 @@ import { IoMdStar } from "react-icons/io";
 import { IoMdStarHalf } from "react-icons/io";
 
 
-export default function Inspect(){
+export default function InspectDemo(){
     return (
         <div className={styles.big_box}>
             <img src="/images/salad.jpg" alt="Caesar salad" className={styles.salad} width="300" height="200" />

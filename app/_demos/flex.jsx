@@ -1,4 +1,4 @@
-import styles from './demo1.module.scss'
+import styles from './flex.module.scss'
 
 export default function Demo1(){
     return (

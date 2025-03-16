@@ -1,5 +1,5 @@
 .big_box {
-    width: 100%;
+    width: 80%;
     aspect-ratio: 1.5;
 
     display: flex;
@@ -7,7 +7,9 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 20px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 20px;
 
     background-color: lightgoldenrodyellow;
 }
